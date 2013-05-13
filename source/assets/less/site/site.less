@@ -1,0 +1,96 @@
+@import "../bootstrap-2.3.1/bootstrap";
+@import "../font-awesome-3.1.1/font-awesome";
+
+@import "variables";
+@import "mixins";
+@import "lazy";
+@import "sticky-footer";
+
+a { font-weight: @bold-weight; }
+
+.navbar {
+  margin-bottom: 60px;
+  .navbar-inner {
+    .box-shadow(none);
+    border-bottom-color: @navbarBorder;
+  }
+  .brand {
+    padding-top: 33px;
+    padding-bottom: 40px;
+    font-weight: @bold-weight;
+    max-width: 220px;
+    &:hover {
+      color: @navbarLinkColorHover;
+    }
+  }
+  .nav > li > a:hover { text-decoration: underline; }
+}
+
+.navbar-text {
+  line-height: @navbarHeight;
+  color: @navbarText;
+  a {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: @navbarLinkColor;
+    &:hover { color: @navbarLinkColorHover; }
+  }
+}
+
+footer {
+  border-top: solid 1px @navbarBorder;
+  background-color: @navbarBackground;
+  color: @navbarText;
+  ul.inline {
+    margin-bottom: 0;
+    li + li:before { content: "\00B7\00A0\00A0\00A0\00A0"; }
+    > li > a {
+      color: @navbarLinkColor;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover { @navbarLinkColorHover; }
+    }
+  }
+}
+
+
+// blog post styles
+.post {
+  .datetime {
+    font-size: @fontSizeSmall;
+    color: #bbb;
+    text-transform: uppercase;
+//    margin-bottom: 0;
+    text-align: center;
+  }
+  h1 {
+//    margin-top: 0px;
+    margin-bottom: .75em;
+    font-family: @altFontFamily;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: .9em;
+//    font-style: italic;
+    text-align: center;
+  }
+  text-align: justify;
+  font-size: @fontSizeLarge;
+  line-height: 1.75em;
+  p { margin-bottom: 1.25em; }
+}
+
+nav {
+  text-align: center;
+  font-size: 70px;
+  line-height: 70px;
+  a {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    display: block;
+    color: @grayLighter;
+    &:hover {
+      color:@grayLight;
+      text-decoration: none;
+    }
+  }
+}

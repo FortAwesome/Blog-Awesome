@@ -1,0 +1,44 @@
+safe:             false
+auto:             true
+server:           true
+server_port:      7993
+baseurl:          /  # Where GitHub serves the project up from
+url:              http://localhost:7993
+
+source:           source
+destination:      _gh_pages
+plugins:          source/_plugins
+
+pygments:         true
+
+title:            Blog Awesome
+author:
+  name:           Dave Gandy
+  email:          dave@fontawesome.io
+  github:
+    handle:       davegandy
+    url:          http://github.com/davegandy
+  twitter:
+    handle:       byscuits
+    url:          http://twitter.com/byscuits
+
+font_awesome:
+  version:        3.1.1
+  url:            http://fontawesome.io
+  legacy_url:     http://fortawesome.github.com/Font-Awesome/
+  twitter:        fontawesome
+  github:
+    url:          https://github.com/FortAwesome/Font-Awesome
+    project:      Font-Awesome
+    org:          FortAwesome
+  icon_count:     302
+  new_icon_count: 54
+
+bootstrap:
+  version:        2.3.1
+jquery:
+  version:        1.9.1
+google_analytics:
+  tracking_id:    UA-30136587-1
+typekit:
+  embed_code:     kja6hqu
