@@ -3,6 +3,8 @@
 // --------------------------------------------------
 // make sure to set .sticky-footer()
 
+@footer-height: 100px;
+
 html, body {
   height: 100%;
 }
@@ -10,8 +12,19 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -@footer-height;
+  /* Pad bottom by footer height */
+  padding: 0 0 @footer-height;
 }
 
-//.footer { min-width: 990px; } // necessary fix for non-responsive layouts
+.footer { height: @footer-height; }
 
-.sticky-footer(20px, 40px, 40px, 60px); // sets default values for sticky footer
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

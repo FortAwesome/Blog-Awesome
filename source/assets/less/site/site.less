@@ -1,4 +1,4 @@
-@import "../bootstrap-2.3.1/bootstrap";
+@import "../bootstrap-3.0.0-pre/bootstrap";
 @import "../font-awesome-3.1.1/font-awesome";
 
 @import "variables";
@@ -8,73 +8,48 @@
 
 a { font-weight: @bold-weight; }
 
-.navbar {
-  margin-bottom: 60px;
-  .navbar-inner {
-    .box-shadow(none);
-    border-bottom-color: @navbarBorder;
-  }
-  .brand {
-    padding-top: 33px;
-    padding-bottom: 40px;
-    font-weight: @bold-weight;
-    max-width: 220px;
-    &:hover {
-      color: @navbarLinkColorHover;
-    }
-  }
-  .nav > li > a:hover { text-decoration: underline; }
+.navbar-brand {
+  padding-top: 33px;
+  padding-bottom: 40px;
+  font-weight: @bold-weight;
 }
+.nav > li > a:hover { text-decoration: underline; }
 
-.navbar-text {
-  line-height: @navbarHeight;
-  color: @navbarText;
-  a {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: @navbarLinkColor;
-    &:hover { color: @navbarLinkColorHover; }
-  }
-}
+.navbar { margin-bottom: 60px; }
 
 footer {
-  border-top: solid 1px @navbarBorder;
-  background-color: @navbarBackground;
-  color: @navbarText;
-  ul.inline {
+  background-color: @navbar-bg;
+  color: @navbar-color;
+  ul.list-inline {
     margin-bottom: 0;
     li + li:before { content: "\00B7\00A0\00A0\00A0\00A0"; }
     > li > a {
-      color: @navbarLinkColor;
+      color: @navbar-link-color;
       padding-top: 40px;
       padding-bottom: 40px;
-      &:hover { @navbarLinkColorHover; }
+      line-height: 100px;
+      &:hover { color: @navbar-link-hover-color; }
     }
   }
 }
-
 
 // blog post styles
 .post {
   .datetime {
-    font-size: @fontSizeSmall;
+    font-size: @font-size-small;
     color: #bbb;
     text-transform: uppercase;
-//    margin-bottom: 0;
     text-align: center;
   }
   h1 {
-//    margin-top: 0px;
     margin-bottom: .75em;
-    font-family: @altFontFamily;
     font-weight: 700;
     font-size: 50px;
     line-height: .9em;
-//    font-style: italic;
     text-align: center;
   }
   text-align: justify;
-  font-size: @fontSizeLarge;
+  font-size: @font-size-large;
   line-height: 1.75em;
   p { margin-bottom: 1.25em; }
 }
@@ -87,9 +62,9 @@ nav {
     padding-top: 130px;
     padding-bottom: 130px;
     display: block;
-    color: @grayLighter;
+    color: @gray-lighter;
     &:hover {
-      color:@grayLight;
+      color:@gray-light;
       text-decoration: none;
     }
   }

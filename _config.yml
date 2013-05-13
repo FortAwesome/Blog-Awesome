@@ -35,7 +35,7 @@ font_awesome:
   new_icon_count: 54
 
 bootstrap:
-  version:        2.3.1
+  version:        3.0.0-pre
 jquery:
   version:        1.9.1
 google_analytics:
