@@ -6,9 +6,10 @@
 @bolder-weight:           800;
 @XLFontSize:              @font-size-base * 2; // ~28px
 
-@navbar-red:              #9d261d;
+@base-color:              #9d261d;
+//@base-color:              #c8382d;
 @navbar-mix:              #fff;
-@navbar-border:           darken(@navbar-red, 10%);
+@navbar-border:           darken(@base-color, 10%);
 
 
 // Font Awesome overrides
@@ -20,26 +21,27 @@
 // -------------------
 
 // Typography
-@font-family-sans-serif:           proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-@headings-font-family:             proxima-nova-sc-osf-ext-cond, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@headings-font-family:    proxima-nova-sc-osf-ext-cond, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-size-base:          16px;
 
 // Scaffolding
 @text-color:            @gray;
 
 // Links
-@link-color:            @navbar-red;
+@link-color:            @base-color;
 @link-hover-color:      darken(@link-color, 15%);
 
 // Basics of a navbar
-@navbar-height:                    100px;
-@navbar-bg:                        @navbar-red;
-@navbar-color:                     mix(@navbar-red, @navbar-mix, 50%);
+@navbar-height:                    60px;
+@navbar-bg:                        @base-color;
+@navbar-color:                     mix(@base-color, @navbar-mix, 50%);
 
 // Navbar links
-@navbar-link-color:                mix(@navbar-red, @navbar-mix, 20%);
-@navbar-link-hover-color:          mix(@navbar-red, @navbar-mix, 0%);
+@navbar-link-color:                mix(@base-color, @navbar-mix, 20%);
+@navbar-link-hover-color:          mix(@base-color, @navbar-mix, 0%);
 @navbar-link-hover-bg:             transparent;
-@navbar-link-active-color:         mix(@navbar-red, @navbar-mix, 0%);
+@navbar-link-active-color:         mix(@base-color, @navbar-mix, 0%);
 @navbar-link-active-bg:            darken(@navbar-bg, 10%);
 @navbar-link-disabled-color:       #ccc;
 @navbar-link-disabled-bg:          transparent;

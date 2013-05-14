@@ -1,7 +1,5 @@
 safe:             false
-auto:             true
-server:           true
-server_port:      7993
+port:             7993
 baseurl:          /  # Where GitHub serves the project up from
 url:              http://localhost:7993
 

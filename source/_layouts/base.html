@@ -31,12 +31,11 @@
   {% include tracking.html %}
 </head>
 <body>
-<div class="wrapper"> <!-- necessary for sticky footer. wrap all content except footer -->
+<div class="wrap"> <!-- necessary for sticky footer. wrap all content except footer -->
   <!--{% include navbar.html %}-->
   {% include navbar.html %}
 
   {{ content }}
-  <div class="push"><!-- necessary for sticky footer --></div>
 </div>
 {% include footer.html %}
 
