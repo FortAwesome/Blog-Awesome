@@ -6,8 +6,6 @@
 @import "lazy";
 @import "sticky-footer";
 
-a { font-weight: @bold-weight; }
-
 .navbar {
   margin-bottom: 60px;
   .navbar-inner {
@@ -78,10 +76,9 @@ footer {
 
 nav {
   text-align: center;
-  font-size: 70px;
-  line-height: 70px;
+  font-size: 42px;
+  line-height: 42px;
   a {
-    padding-top: 130px;
     padding-bottom: 130px;
     display: block;
     color: @grayLighter;
@@ -91,3 +88,6 @@ nav {
     }
   }
 }
+
+@import "responsive";
+@import "responsive-767px-max";
