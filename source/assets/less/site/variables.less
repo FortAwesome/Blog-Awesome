@@ -1,52 +1,40 @@
-// Site variables
-// --------------
-@text-muted:              #bbb;
-@light-weight:            100;
-@bold-weight:             700;
-@bolder-weight:           800;
-@XLFontSize:              @font-size-base * 2; // ~28px
-
-@base-color:              #9d261d;
-//@base-color:              #c8382d;
-@navbar-mix:              #fff;
-@navbar-border:           darken(@base-color, 10%);
-
-
 // Font Awesome overrides
-// ----------------------
+
 @FontAwesomePath:         "../../font/font-awesome-3.1.1";
 
 
 // Bootstrap overrides
-// -------------------
+@sansFontFamily:          proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@altFontFamily:           proxima-nova-sc-osf-ext-cond, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@navbarHeight:            100px;
+@navbarBackground:        #fff;
+@navbarBorder:            @grayLighter;
+@navbarText:              #bbb;
+@linkColor:               #9d261d;
+@linkColorHover:          darken(@linkColor, 10%);
+@textColor:               #666;
 
-// Typography
-@font-family-sans-serif:  proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-@headings-font-family:    proxima-nova-sc-osf-ext-cond, "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-size-base:          16px;
 
-// Scaffolding
-@text-color:            @gray;
+// Site variables
+@text-muted:              #bbb;
+@light-weight:            100;
+@bold-weight:             700;
+@bolder-weight:           800;
+@XLFontSize:              @baseFontSize * 2; // ~28px
 
-// Links
-@link-color:            @base-color;
-@link-hover-color:      darken(@link-color, 15%);
 
-// Basics of a navbar
-@navbar-height:                    60px;
-@navbar-bg:                        @base-color;
-@navbar-color:                     mix(@base-color, @navbar-mix, 50%);
+// red navbar
+@navbar-base:               #9d261d;
+@navbar-mix:                @white;
+@navbarBackgroundHighlight: @navbar-base;
+@navbarBackground:          @navbar-base;
+@navbarBorder:              darken(@navbar-base, 10%);
 
-// Navbar links
-@navbar-link-color:                mix(@base-color, @navbar-mix, 20%);
-@navbar-link-hover-color:          mix(@base-color, @navbar-mix, 0%);
-@navbar-link-hover-bg:             transparent;
-@navbar-link-active-color:         mix(@base-color, @navbar-mix, 0%);
-@navbar-link-active-bg:            darken(@navbar-bg, 10%);
-@navbar-link-disabled-color:       #ccc;
-@navbar-link-disabled-bg:          transparent;
+@navbarText:                      mix(@navbar-base, @navbar-mix, 50%);
+@navbarLinkColor:                 mix(@navbar-base, @navbar-mix, 20%);
+@navbarLinkColorHover:            mix(@navbar-base, @navbar-mix, 0%);
+@navbarLinkColorActive:           mix(@navbar-base, @navbar-mix, 0%);
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
-// Navbar brand label
-@navbar-brand-color:               @navbar-link-color;
-@navbar-brand-hover-color:         @navbar-link-hover-color;
-@navbar-brand-hover-bg:            transparent;
+@navbarBrandColor:                @navbarLinkColor;

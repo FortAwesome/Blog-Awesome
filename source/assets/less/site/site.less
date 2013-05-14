@@ -1,4 +1,4 @@
-@import "../bootstrap-3.0.0-pre/bootstrap";
+@import "../bootstrap-2.3.1/bootstrap";
 @import "../font-awesome-3.1.1/font-awesome";
 
 @import "variables";
@@ -6,79 +6,72 @@
 @import "lazy";
 @import "sticky-footer";
 
-//a { font-weight: @bold-weight; }
-
-.navbar-brand {
-  font-size: @font-size-base * 2;
-  padding-top: 40px;
-  padding-bottom: 0;
-  padding-left: 0;
-  font-weight: @bold-weight;
-  max-width: inherit;
-  text-align: left;
-  .icon-rocket {
-    font-size: 65px;
-    height: 65px;
-    margin-right: 25px;
-    margin-left: 10px;
-    float: left;
-    margin-top: -5px;
-  }
-}
+a { font-weight: @bold-weight; }
 
 .navbar {
   margin-bottom: 60px;
-  .nav  {
-    a {
-      padding-top: 10px;
-      padding-bottom: 30px;
+  .navbar-inner {
+    .box-shadow(none);
+    border-bottom-color: @navbarBorder;
+  }
+  .brand {
+    padding-top: 33px;
+    padding-bottom: 40px;
+    font-weight: @bold-weight;
+    max-width: 220px;
+    &:hover {
+      color: @navbarLinkColorHover;
+    }
+  }
+  .nav > li > a:hover { text-decoration: underline; }
+}
+
+.navbar-text {
+  line-height: @navbarHeight;
+  color: @navbarText;
+  a {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: @navbarLinkColor;
+    &:hover { color: @navbarLinkColorHover; }
+  }
+}
+
+footer {
+  border-top: solid 1px @navbarBorder;
+  background-color: @navbarBackground;
+  color: @navbarText;
+  ul.inline {
+    margin-bottom: 0;
+    li + li:before { content: "\00B7\00A0\00A0\00A0\00A0"; }
+    > li > a {
+      color: @navbarLinkColor;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover { @navbarLinkColorHover; }
     }
   }
 }
 
-.nav > li > a:hover { text-decoration: underline; }
-
-footer {
-  background-color: @navbar-bg;
-  color: @navbar-color;
-  font-size: @font-size-large;
-  a {
-//    padding-top: 40px;
-//    padding-bottom: 40px;
-//    line-height: 100px;
-    color: @navbar-link-color;
-    &:hover { color: @navbar-link-hover-color; }
-  }
-  ul {
-    margin-bottom: 0;
-//    li + li:before { content: "\00B7\00A0\00A0\00A0\00A0"; }
-//    > li > a {
-//      padding-top: 40px;
-//      padding-bottom: 40px;
-//      line-height: 100px;
-//      color: @navbar-link-color;
-//      &:hover { color: @navbar-link-hover-color; }
-//    }
-  }
-}
 
 // blog post styles
 .post {
   .datetime {
-    font-size: @font-size-mini;
+    font-size: @fontSizeSmall;
     color: #bbb;
     text-transform: uppercase;
     text-align: center;
   }
   h1 {
     margin-bottom: .75em;
+    font-family: @altFontFamily;
     font-weight: 700;
     font-size: 50px;
     line-height: .9em;
     text-align: center;
   }
   text-align: justify;
-//  font-size: @font-size-large;
+  font-size: @fontSizeLarge;
   line-height: 1.75em;
   p { margin-bottom: 1.25em; }
 }
@@ -91,9 +84,9 @@ nav {
     padding-top: 130px;
     padding-bottom: 130px;
     display: block;
-    color: @gray-lighter;
+    color: @grayLighter;
     &:hover {
-      color:@gray-light;
+      color:@grayLight;
       text-decoration: none;
     }
   }

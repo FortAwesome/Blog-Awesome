@@ -59,19 +59,19 @@
 .strong { font-weight: bold; }
 .em { font-style: italic; }
 .small { font-size: 85%; } // Ex: 14px base font * 85% = about 12px
-.no-link { color: @text-color; }
-.text-sans-serif { font-family: @font-family-sans-serif; }
+.no-link { color: @grayDark; }
+.text-sans-serif { font-family: @sansFontFamily; }
 .text-ellipsis { .text-overflow(); } // truncates text to a single line with an ellipsis at the end
 .text-default {
-  font-family: @font-family-sans-serif;
-  font-size: @font-size-base;
-  line-height: @line-height-base;
+  font-family: @sansFontFamily;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
   font-weight: normal;
 }
 .hilite {
-  color: @link-color;
+  color: @linkColor;
   &:hover {
-    color: @link-hover-color;
+    color: @linkColorHover;
     text-decoration: underline;
   }
   [class^="icon-"], [class*=" icon-"] {
