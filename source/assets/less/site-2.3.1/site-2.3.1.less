@@ -6,7 +6,6 @@
 @import "sticky-footer";
 
 .navbar {
-  margin-bottom: 60px;
   .navbar-inner {
     .box-shadow(none);
     border-bottom-color: @navbarBorder;
@@ -26,10 +25,25 @@
   .btn-navbar { padding: 2px 10px; } // so icon-reorder can be used instead
 }
 
+.social {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px 0 15px;
+  border-bottom: solid 1px #eee;
+  ul {
+    list-style: none;
+    margin: 0;
+    > li {
+      display: inline;
+      margin: 0 10px;
+    }
+  }
+}
 
 // blog post styles
 .post {
   .datetime {
+    margin-top: 60px;
     font-size: @baseFontSize - 4;
     color: @text-muted;
     text-transform: uppercase;
@@ -63,7 +77,7 @@ nav {
 }
 
 footer {
-  border-top: solid 1px @navbarBorder;
+  border-top: solid 1px #eee;
   background-color: @navbarBackground;
   color: @navbarText;
   padding-top: 40px;

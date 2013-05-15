@@ -217,7 +217,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #721c15;
+  color: #c83025;
   text-decoration: underline;
 }
 .img-rounded {
@@ -2601,7 +2601,7 @@ input[type="submit"].btn.btn-mini {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #721c15;
+  color: #c83025;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3081,8 +3081,8 @@ input[type="submit"].btn.btn-mini {
 }
 .nav .dropdown-toggle:hover .caret,
 .nav .dropdown-toggle:focus .caret {
-  border-top-color: #721c15;
-  border-bottom-color: #721c15;
+  border-top-color: #c83025;
+  border-bottom-color: #c83025;
 }
 /* move down carets for tabs */
 .nav-tabs .dropdown-toggle .caret {
@@ -3250,7 +3250,7 @@ input[type="submit"].btn.btn-mini {
   background-image: linear-gradient(to bottom, #9d261d, #9d261d);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9d261d', endColorstr='#ff9d261d', GradientType=0);
-  border: 1px solid #9d261d;
+  border: 1px solid #eeeeee;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -6236,7 +6236,7 @@ ul.icons-ul > li .icon-li {
   color: #9d261d;
 }
 .hilite:hover {
-  color: #721c15;
+  color: #c83025;
   text-decoration: underline;
 }
 .hilite [class^="icon-"]:before,
@@ -6272,14 +6272,11 @@ body {
   height: 23px;
   padding: 40px 0 40px;
 }
-.navbar {
-  margin-bottom: 60px;
-}
 .navbar .navbar-inner {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  border-bottom-color: #9d261d;
+  border-bottom-color: #eeeeee;
 }
 .navbar .brand {
   font-size: 30px;
@@ -6300,12 +6297,27 @@ body {
 .navbar .btn-navbar {
   padding: 2px 10px;
 }
+.social {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px 0 15px;
+  border-bottom: solid 1px #eee;
+}
+.social ul {
+  list-style: none;
+  margin: 0;
+}
+.social ul > li {
+  display: inline;
+  margin: 0 10px;
+}
 .post {
   text-align: justify;
   font-size: 18px;
   line-height: 1.75em;
 }
 .post .datetime {
+  margin-top: 60px;
   font-size: 12px;
   color: #bbbbbb;
   text-transform: uppercase;
@@ -6335,7 +6347,7 @@ nav a:hover {
   text-decoration: none;
 }
 footer {
-  border-top: solid 1px #9d261d;
+  border-top: solid 1px #eee;
   background-color: #9d261d;
   color: #c47d77;
   padding-top: 40px;
@@ -6763,7 +6775,8 @@ footer ul > li {
     height: 46px;
     padding: 40px 0 40px;
   }
-  .footer {
+  .footer,
+  .social {
     margin-left: -20px;
     margin-right: -20px;
     padding-left: 20px;
