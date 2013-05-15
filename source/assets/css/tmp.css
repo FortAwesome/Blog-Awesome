@@ -1,0 +1,47 @@
+.carbonad  {
+  display: block;
+  background: #fdfdfd;
+  background-image: -moz-linear-gradient(top, #f8f8f8, #fdfdfd);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f8f8f8),color-stop(1, #fdfdfd));
+  border: 1px solid #d5d5d5;
+  font-family: Lucida Grande, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  height: 118px;
+  line-height: 15px;
+  overflow: hidden;
+  width: 300px; }
+
+.carbonad-img  {
+  border: none;
+  display: inline;
+  float: left;
+  height: 100px;
+  margin: 9px;
+  width: 130px;
+}
+
+.carbonad-text {
+  display: inline;
+  float: left;
+  width: 142px;
+  padding-top: 13px;
+}
+
+.carbonad-text a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.carbonad-tag {
+  float: left;
+  margin-top: 9px;
+  text-align: center;
+  width: 142px;
+  color: #999999;
+}
+
+.carbonad-tag a {
+  color: #999999;
+  text-decoration: none;
+}

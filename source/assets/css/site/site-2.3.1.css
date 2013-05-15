@@ -6366,6 +6366,27 @@ footer ul {
 footer ul > li {
   display: inline;
 }
+#carbonads-container {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  margin: 0;
+  text-align: right;
+}
+#carbonads-container .carbonad {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: solid 1px #eee;
+  background-color: #f9f9f9;
+  text-align: right;
+}
+#carbonads-container .carbonad-tag {
+  width: 119px;
+}
+#carbonads-container .carbonad-tag a {
+  font-weight: normal;
+}
 /*!
  * Bootstrap Responsive v2.3.1
  *
@@ -6759,6 +6780,48 @@ footer ul > li {
   .navbar .nav.pull-right > li > a {
     padding-top: 10px;
     padding-bottom: 25px;
+  }
+  #carbonads-container {
+    position: static;
+    margin-top: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  #carbonads-container .carbonad {
+    margin-right: auto;
+    margin-left: auto;
+    *zoom: 1;
+    height: 118px;
+    line-height: 15px;
+    overflow: hidden;
+    width: 300px;
+  }
+  #carbonads-container .carbonad:before,
+  #carbonads-container .carbonad:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  #carbonads-container .carbonad:after {
+    clear: both;
+  }
+  #carbonads-container .carbonad-img {
+    margin: 9px;
+  }
+  #carbonads-container .carbonad-text {
+    font-family: Lucida Grande, Arial, Helvetica, sans-serif;
+    width: 142px;
+    height: 62px;
+    padding-top: 13px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  #carbonads-container .carbonad-tag {
+    margin-top: 9px;
+    text-align: right;
+    font-family: Lucida Grande, Arial, Helvetica, sans-serif;
+    width: 142px;
+    margin-left: 0;
   }
   .post {
     font-size: 16px;
