@@ -2,7 +2,6 @@
 @import "../font-awesome-3.1.1/font-awesome";
 
 @import "variables";
-@import "mixins";
 @import "lazy";
 @import "sticky-footer";
 
@@ -13,10 +12,11 @@
     border-bottom-color: @navbarBorder;
   }
   .brand {
-    padding-top: 33px;
-    padding-bottom: 40px;
+    font-size: 30px;
+    padding-top: 27px;
+    padding-bottom: 33px;
     font-weight: @bold-weight;
-    max-width: 220px;
+    max-width: none;
     &:hover {
       color: @navbarLinkColorHover;
     }
@@ -39,15 +39,15 @@ footer {
   border-top: solid 1px @navbarBorder;
   background-color: @navbarBackground;
   color: @navbarText;
-  ul.inline {
+  a {
+    color: @navbarLinkColor;
+    &:hover { @navbarLinkColorHover; }
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  ul {
+    > li { display: inline; }
     margin-bottom: 0;
-    li + li:before { content: "\00B7\00A0\00A0\00A0\00A0"; }
-    > li > a {
-      color: @navbarLinkColor;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      &:hover { @navbarLinkColorHover; }
-    }
   }
 }
 
@@ -55,21 +55,19 @@ footer {
 // blog post styles
 .post {
   .datetime {
-    font-size: @fontSizeSmall;
-    color: #bbb;
+    font-size: @baseFontSize - 4;
+    color: @text-muted;
     text-transform: uppercase;
     text-align: center;
   }
   h1 {
     margin-bottom: .75em;
-    font-family: @altFontFamily;
-    font-weight: 700;
     font-size: 50px;
     line-height: .9em;
     text-align: center;
   }
   text-align: justify;
-  font-size: @fontSizeLarge;
+  font-size: @baseFontSize + 2;
   line-height: 1.75em;
   p { margin-bottom: 1.25em; }
 }
@@ -88,6 +86,9 @@ nav {
     }
   }
 }
+
+.navbar .btn-navbar { padding: 2px 10px; } // so you can use icon-reorder in .btn-navbar
+
 
 @import "responsive";
 @import "responsive-767px-max";

@@ -20,7 +20,7 @@
   <!-- CSS
  ================================================== -->
 
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/site/site.css" media="screen">
+  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/site/site-{{ site.bootstrap.version }}.css" media="screen">
   <!--[if IE 7]>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/{{ site.font_awesome.version }}/css/font-awesome-ie7.min.css">
   <![endif]-->
@@ -31,7 +31,7 @@
   {% include tracking.html %}
 </head>
 <body>
-<div class="wrapper"> <!-- necessary for sticky footer. wrap all content except footer -->
+<div class="wrap"> <!-- necessary for sticky footer. wrap all content except footer -->
   <!--{% include navbar.html %}-->
   {% include navbar.html %}
 
