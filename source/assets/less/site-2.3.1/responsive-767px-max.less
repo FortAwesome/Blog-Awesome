@@ -3,21 +3,32 @@
   .navbar {
     text-align: center;
     .brand, .nav.pull-right, .nav.pull-right > li { float: none; }
-    .brand { padding-bottom: 17px; }
+    .brand {
+      padding-bottom: 10px;
+      .icon-large {
+        display: block;
+        font-size: 14px * 4;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
     .nav.pull-right > li > a {
       padding-top: 10px;
       padding-bottom: 25px;
     }
   }
 
-  .post { font-size: @baseFontSize; }
+  .post {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight + 2;
+  }
 
   .sticky-footer(46px, 40px, 40px, 60px); // sets default values for sticky footer
 
   .footer {
     margin-left: -20px;
     margin-right: -20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

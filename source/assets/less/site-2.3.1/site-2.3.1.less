@@ -13,42 +13,17 @@
   }
   .brand {
     font-size: 30px;
-    padding-top: 27px;
-    padding-bottom: 33px;
+    padding-top: 28px;
+    padding-bottom: 32px;
     font-weight: @bold-weight;
     max-width: none;
-    &:hover {
-      color: @navbarLinkColorHover;
+    &:hover { color: @navbarLinkColor; }
+    .icon-large {
+      margin-right: .2em;
     }
   }
   .nav > li > a:hover { text-decoration: underline; }
-}
-
-.navbar-text {
-  line-height: @navbarHeight;
-  color: @navbarText;
-  a {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: @navbarLinkColor;
-    &:hover { color: @navbarLinkColorHover; }
-  }
-}
-
-footer {
-  border-top: solid 1px @navbarBorder;
-  background-color: @navbarBackground;
-  color: @navbarText;
-  a {
-    color: @navbarLinkColor;
-    &:hover { @navbarLinkColorHover; }
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  ul {
-    > li { display: inline; }
-    margin-bottom: 0;
-  }
+  .btn-navbar { padding: 2px 10px; } // so icon-reorder can be used instead
 }
 
 
@@ -87,7 +62,20 @@ nav {
   }
 }
 
-.navbar .btn-navbar { padding: 2px 10px; } // so you can use icon-reorder in .btn-navbar
+footer {
+  border-top: solid 1px @navbarBorder;
+  background-color: @navbarBackground;
+  color: @navbarText;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  a { color: @navbarLinkColor; font-weight: bold; }
+  a:hover { color: @navbarLinkColorHover; }
+  ul {
+    margin-bottom: 0;
+    > li { display: inline; }
+  }
+}
+
 
 
 @import "responsive";
