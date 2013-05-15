@@ -3,31 +3,21 @@ title: Lorem Ipsum Dolor Sit Amet
 layout: base
 ---
 
-<div class="container">
-  <div class="row">
-    <div class="span8 offset2">
-      <div class="post">
-        <p class="datetime">May 1, 2006</p>
-        <h1><a href="./">Lorem Ipsum Dolor Sit Amet</a></h1>
-      </div>
+{% for post in paginator.posts %}
+<section class="row">
+  <div class="span8 offset2">
+    <div class="post">
+      <p class="datetime">{{ post.date | date_to_string }}</p>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      {{ post.content }}
     </div>
   </div>
+</section>
+{% endfor %}
 
-  <div class="row">
-    <div class="span2">
-      <nav class="hidden-phone"><a href="./"><i class="icon-chevron-sign-left"></i></a></nav>
-    </div>
-    <div class="span8">
-      <div class="post">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra suscipit ultrices. Cras sapien erat, tristique nec interdum eu, pharetra at tortor. Proin id imperdiet diam. Pellentesque viverra gravida orci. Nullam tincidunt mauris posuere lectus dignissim ultricies. In sed gravida lorem. Proin at nisl sem, quis blandit sem. Suspendisse aliquet aliquet est, et placerat lectus eleifend blandit. Sed ac erat eu neque egestas iaculis. Donec iaculis convallis metus, et rhoncus urna blandit quis.</p>
-        <p>Vestibulum non nibh est. Morbi sollicitudin, felis quis vulputate sollicitudin, ante tortor congue tortor, vel tempus odio felis ac lacus. Aenean commodo cursus felis, ut aliquam felis malesuada a. Duis a dignissim ante. Curabitur fringilla elit in neque sollicitudin eu lacinia ipsum imperdiet. Phasellus mollis malesuada sem, id ultricies erat molestie et. Maecenas mauris dui, aliquam nec dapibus vel, pulvinar eu justo. Vivamus semper vulputate nunc at tincidunt. Morbi condimentum dictum purus eget accumsan. Aliquam eu ultricies orci. Nullam scelerisque, orci vitae eleifend dictum, eros mi sagittis nisi, nec iaculis ipsum arcu a elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris consectetur eros sit amet lacus sagittis ut faucibus tortor luctus. Quisque dapibus iaculis dignissim. Aliquam sed tellus ac tellus accumsan tristique id eu leo.</p>
-        <p>Nam convallis nisi nec tortor rhoncus egestas. Nam ac orci mauris, sed gravida nisl. Vivamus congue semper purus consectetur ultrices. Morbi elit ligula, iaculis in tristique vel, placerat vitae arcu. Sed et nulla tortor, at vehicula lorem. Proin molestie ante et magna tempor vehicula. Proin consectetur tincidunt leo quis volutpat. Phasellus nec arcu at justo pellentesque pretium dignissim vitae neque. Proin quis dapibus libero. Duis non vestibulum ipsum. Duis et nulla lectus, nec faucibus dui. Mauris sapien justo, posuere at ultricies at, eleifend et leo.</p>
-        <p>Donec tempus arcu ut urna lacinia cursus. Vestibulum iaculis tortor sollicitudin urna pretium luctus. Sed scelerisque mauris id tellus mollis ut pharetra libero pulvinar. Praesent sapien erat, luctus sed iaculis ac, ullamcorper quis velit. Nullam facilisis blandit vulputate. Vestibulum dapibus vestibulum dui, tristique rhoncus mi egestas ac. Suspendisse mollis vehicula elit eget lacinia. Quisque ligula urna, interdum sed lobortis vitae, varius luctus sem. Nam ante enim, ullamcorper id consequat et, auctor et justo. In est tortor, dictum quis euismod a, lacinia porttitor justo. Donec consectetur ornare mattis. Aliquam lacus magna, interdum eu dignissim sit amet, ultricies in urna.</p>
-        <p>Pellentesque nec sapien felis, at vulputate ante. Suspendisse fermentum consectetur leo ac tincidunt. Aenean auctor metus sed enim egestas a rutrum nunc mollis. Nunc a lacus ut justo eleifend elementum et ut sapien. Nulla fringilla quam vel quam fermentum et tincidunt est sagittis. Sed dictum egestas bibendum. Curabitur venenatis fringilla diam, ut semper nulla placerat et. Suspendisse mollis nulla augue, eget scelerisque magna. Aliquam euismod elit eget risus bibendum quis porttitor ante condimentum. Curabitur porttitor risus nec justo bibendum blandit. Curabitur felis risus, molestie in mollis ac, vehicula a orci.</p>
-      </div>
-    </div>
-    <div class="span2">
-      <nav class="hidden-phone"><a href="./"><i class="icon-chevron-sign-right"></i></a></nav>
-    </div>
+<section class="row">
+  <div class="span8 offset2 text-center">
+    <a href="{{ site.baseurl }}articles">See All Articles <i class="icon-double-angle-right"></i></a>
   </div>
-</div>
+</section>
+

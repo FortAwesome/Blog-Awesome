@@ -8,6 +8,8 @@ destination:      _gh_pages
 plugins:          source/_plugins
 
 pygments:         true
+permalink:        pretty
+paginate:         5
 
 title:            Blog Awesome
 author:

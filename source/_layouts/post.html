@@ -1,0 +1,26 @@
+---
+layout: base
+---
+
+<section class="row">
+  <div class="span8 offset2">
+    <div class="post">
+      <p class="datetime">{{ page.date | date_to_string }}</p>
+      <h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
+    </div>
+  </div>
+</section>
+
+<div class="row">
+  <div class="span2">
+    <nav class="hidden-phone"><a href="./"><i class="icon-chevron-sign-left"></i></a></nav>
+  </div>
+  <div class="span8">
+    <div id="post" class="post">
+      {{ content }}
+    </div>
+  </div>
+  <div class="span2">
+    <nav class="hidden-phone"><a href="./"><i class="icon-chevron-sign-right"></i></a></nav>
+  </div>
+</div>

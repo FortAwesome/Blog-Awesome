@@ -4,6 +4,7 @@
 @bold-weight:             700;
 @XLFontSize:              @baseFontSize * 2; // ~28px
 @brand-primary:           lighten(#9d261d, 0%);
+//@brand-primary:           #c5302f;
 @navbar-mix:              #fff;
 
 
@@ -22,8 +23,8 @@
 
 
 // Links
-@linkColor:             @brand-primary;
-@linkColorHover:        lighten(@linkColor, 10%);
+@linkColor:             lighten(@brand-primary, 10%);
+@linkColorHover:        lighten(@brand-primary, 20%);
 
 
 // Typography
@@ -34,6 +35,10 @@
 
 @headingsFontFamily:    proxima-nova-sc-osf-ext-cond, "Helvetica Neue", Helvetica, Arial, sans-serif;
 @headingsFontWeight:    @bold-weight;
+
+
+// Wells
+@wellBackground:                  #f9f9f9;
 
 
 // Navbar
@@ -51,6 +56,7 @@
 @navbarLinkColorActive:           @navbar-mix;
 
 @navbarBrandColor:                @navbarLinkColorHover;
+@navbarBrandColorHover:           mix(@brand-primary, @navbar-mix, 20%);
 
 
 // Grid

@@ -23,15 +23,14 @@
     margin-top: 20px;
     margin-left: -20px;
     margin-right: -20px;
-    .carbonad  {
+    .carbonad {
       .container-fixed();
       height: 118px;
       line-height: 15px;
       overflow: hidden;
-      width: 300px; }
-
-    .carbonad-img  { margin: 9px; }
-
+      width: 300px;
+    }
+    .carbonad-img { margin: 9px; }
     .carbonad-text {
       font-family: Lucida Grande, Arial, Helvetica, sans-serif;
       width: 142px;
@@ -40,7 +39,6 @@
       margin-left: 0;
       margin-top: 0;
     }
-
     .carbonad-tag {
       margin-top: 9px;
       text-align: right;
@@ -50,15 +48,21 @@
     }
   }
 
-
+  .container > section { margin-top: 30px; }
 
   .post {
+    .datetime {
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
     font-size: @baseFontSize;
     line-height: @baseLineHeight + 2;
   }
 
   .sticky-footer(46px, 40px, 40px, 60px); // sets default values for sticky footer
-
   .footer, .social {
     margin-left: -20px;
     margin-right: -20px;

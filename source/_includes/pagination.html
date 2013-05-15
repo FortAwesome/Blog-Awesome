@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="span8 offset2">
+
+    <div id="post-pagination" class="pagination text-center">
+      <ul>
+        {% if paginator.previous_page %}
+          <li>
+            {% if paginator.previous_page == 1 %}
+              <a href="/"><i class="icon-double-angle-left"></i></a>
+            {% else %}
+              <a href="{{ paginator.previous_page_path }}"><i class="icon-double-angle-left"></i></a>
+            {% endif %}
+          </li>
+        {% else %}
+          <li class="disabled"><span><i class="icon-double-angle-left"></i></span></li>
+        {% endif %}
+
+        {% if paginator.page == 1 %}
+          <li class="active"><span>1</span></li>
+        {% else %}
+          <li><a href="/">1</a></li>
+        {% endif %}
+
+        {% for count in (2..paginator.total_pages) %}
+          {% if count == paginator.page %}
+            <li class="active"><span>{{ count }}</span></li>
+          {% else %}
+            <li><a href="/page{{ count }}">{{ count }}</a></li>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <li><a href="{{ paginator.next_page_path }}"><i class="icon-double-angle-right"></i></a></li>
+        {% else %}
+          <li class="disabled"><span><i class="icon-double-angle-right"></i></span></li>
+        {% endif %}
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
