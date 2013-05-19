@@ -59,22 +59,23 @@
 .container > section { margin-top: 60px; }
 
 // blog post styles
+.date {
+  font-size: @baseFontSize - 2;
+  color: #ccc;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
 .post {
-  .datetime {
-    font-size: @baseFontSize - 4;
-    color: @text-muted;
-    text-transform: uppercase;
-    text-align: center;
-  }
+  text-align: justify;
+  font-size: @baseFontSize + 2;
+  line-height: 1.75em;
   h1 {
     margin-bottom: .75em;
     font-size: 50px;
     line-height: .9em;
     text-align: center;
   }
-  text-align: justify;
-  font-size: @baseFontSize + 2;
-  line-height: 1.75em;
   p { margin-bottom: 1.25em; }
 }
 
@@ -89,6 +90,55 @@ nav {
     &:hover {
       color:@grayLight;
       text-decoration: none;
+    }
+  }
+}
+
+h3 a {
+  &:hover span { color: @grayLight; }
+  span {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 21px;
+    color: @grayLighter;
+  }
+}
+
+ul.posts {
+  list-style: none;
+  margin: 0;
+  > li {
+    position: relative;
+    padding-left: 110px;
+    margin-bottom: 35px;
+    .title {
+      font-family: @headingsFontFamily;
+      font-size: 28px;
+    }
+    a.date {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 100px;
+      color: #ccc;
+      &:hover { color: @grayLight; }
+    }
+    &.first {
+      padding-left: 0;
+      .title {
+        display: block;
+        text-align: center;
+        font-size: @baseFontSize * 4;
+        padding-bottom: 60px;
+        border-bottom: solid 1px @borderColor;
+        line-height: @baseFontSize * 4;
+      }
+      a.date {
+        position: inherit;
+        display: block;
+        width: auto;
+        margin-bottom: 35px;
+      }
     }
   }
 }

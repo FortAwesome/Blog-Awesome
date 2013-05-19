@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lorem Ipsum Dolor Sit Amet"
+title:  "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet"
 date:   2013-05-14 17:17:55
 ---
 
