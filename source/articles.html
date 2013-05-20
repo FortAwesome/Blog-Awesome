@@ -7,7 +7,7 @@ layout: base
     <ul class="posts">
       {% for post in site.posts %}
         <li{% if post == site.posts.first %} class="first"{% endif %}>
-          <a href="{{ post.url }}" class="date">{{ post.date | date_to_string }}</a>
+          <a href="{{ post.url }}" class="date">{% if post == site.posts.first %}Latest Article &mdash;{% endif %}{{ post.date | date_to_string }}</a>
           <a href="{{ post.url }}" class="title">{{ post.title }}</a>
         </li>
       {% endfor %}
