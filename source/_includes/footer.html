@@ -1,9 +1,9 @@
 <footer class="footer text-center">
   <ul class="unstyled">
     <li><a href="{{ site.baseurl }}">Home</a></li>
-    <li>&nbsp; &middot; &nbsp;<a href="{{ site.baseurl }}articles">Articles</a></li>
+    {% if site.posts.size > 1 %}<li>&nbsp; &middot; &nbsp;<a href="{{ site.baseurl }}articles">Articles</a></li>{% endif %}
     <li>&nbsp; &middot; &nbsp;<a href="{{ site.font_awesome.url }}">Font Awesome</a><br class="visible-phone"></li>
-    <li><span class="hidden-phone">&nbsp; &middot; &nbsp;</span><a href="http://twitter.com/{{ site.font_awesome.twitter }}">Twitter</a></li>
+    <li><span class="hidden-phone">&nbsp; &middot; &nbsp;</span><a href="http://twitter.com/{{ site.font_awesome.twitter }}">@{{ site.font_awesome.twitter }}</a></li>
     <li>&nbsp; &middot; &nbsp;<a href="mailto:{{ site.author.email }}">Email</a></li>
   </ul>
 </footer>

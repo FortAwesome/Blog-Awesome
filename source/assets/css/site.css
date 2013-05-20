@@ -6370,6 +6370,9 @@ nav a:hover {
   color: #999999;
   text-decoration: none;
 }
+h3 a {
+  display: block;
+}
 h3 a:hover span {
   color: #999999;
 }
@@ -6377,7 +6380,7 @@ h3 a span {
   display: inline-block;
   padding-left: 10px;
   font-size: 21px;
-  color: #eeeeee;
+  color: #ccc;
 }
 ul.posts {
   list-style: none;
@@ -6438,6 +6441,18 @@ footer ul {
 }
 footer ul > li {
   display: inline;
+}
+pre,
+code {
+  background-color: #fafafa;
+  border-color: #eeeeee;
+}
+.highlight pre {
+  padding: 8px 15px;
+  margin-bottom: 1.25em;
+}
+.highlight pre code {
+  font-size: 12px;
 }
 /*!
  * Bootstrap Responsive v2.3.1
