@@ -21,6 +21,6 @@ And a big thank you to [@robmadole](https://twitter.com/robmadole) for helping o
 
 ### Font Awesome 4.0
 
-Since Font Awesome 1.0 was released over a year ago, we've learned some things about the best way to serve icon fonts. Version 4.0 will have a prefix class (likely `fa` or `fontawesome`) along with the name of the icon (`fa-heart` or `fontawesome-heart`). As the CSS will no longer contain matching selectors, CSS rendering time will speed up quite a bit. We'll also be de-emphasizing IE7 support (though it will stay at the basic level since the cost is minimal). And we'll add Foundation support and dig into how feasible GSUB support will be.
+Since Font Awesome 1.0 was released over a year ago, we've learned some things about the best way to serve icon fonts. Version 4.0 will have a prefix class (likely `fa` or `fontawesome`) along with the name of the icon (`fa-heart` or `fontawesome-heart`). As the CSS will no longer contain matching selectors, CSS rendering time will speed up quite a bit. We'll also be de-emphasizing IE7 support (though it will stay at the basic level since the cost is minimal). And we'll add [Foundation](http://foundation.zurb.com) support and dig into how feasible GSUB support will be.
 
 Want to see how things are progressing or get details on the issues? I'm keeping track of the release in [Font Awesome's 4.0 milestone](https://github.com/FortAwesome/Font-Awesome/issues?milestone=2&state=open).
