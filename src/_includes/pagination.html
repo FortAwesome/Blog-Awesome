@@ -6,13 +6,13 @@
         {% if paginator.previous_page %}
           <li>
             {% if paginator.previous_page == 1 %}
-              <a href="/"><i class="icon-double-angle-left"></i></a>
+              <a href="/"><i class="fa fa-angle-double-left"></i></a>
             {% else %}
-              <a href="{{ paginator.previous_page_path }}"><i class="icon-double-angle-left"></i></a>
+              <a href="{{ paginator.previous_page_path }}"><i class="fa fa-angle-double-left"></i></a>
             {% endif %}
           </li>
         {% else %}
-          <li class="disabled"><span><i class="icon-double-angle-left"></i></span></li>
+          <li class="disabled"><span><i class="fa fa-angle-double-left"></i></span></li>
         {% endif %}
 
         {% if paginator.page == 1 %}
@@ -30,9 +30,9 @@
         {% endfor %}
 
         {% if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path }}"><i class="icon-double-angle-right"></i></a></li>
+          <li><a href="{{ paginator.next_page_path }}"><i class="fa fa-angle-double-right"></i></a></li>
         {% else %}
-          <li class="disabled"><span><i class="icon-double-angle-right"></i></span></li>
+          <li class="disabled"><span><i class="fa fa-angle-double-right"></i></span></li>
         {% endif %}
       </ul>
     </div>

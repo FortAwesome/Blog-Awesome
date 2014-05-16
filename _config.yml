@@ -3,9 +3,9 @@ port:             7993
 baseurl:          /  # Where GitHub serves the project up from
 url:              http://localhost:7993
 
-source:           source
+source:           src
 destination:      _gh_pages
-plugins:          source/_plugins
+plugins:          src/_plugins
 
 permalink:        pretty
 paginate:         5
@@ -34,8 +34,6 @@ font_awesome:
     url:          https://github.com/FortAwesome/Font-Awesome
     project:      Font-Awesome
     org:          FortAwesome
-  icon_count:     302
-  new_icon_count: 54
 
 bootstrap:
   version:        2.3.1
