@@ -4,14 +4,16 @@ layout: base
 ---
 
 <section class="row">
-  <div class="span8 offset2">
+  <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <h1 class="all-articles">All Articles</h1>
     <ul class="posts">
       {% for post in site.posts %}
-        <li{% if post == site.posts.first %} class="first"{% endif %}>
-          <a href="{{ post.url }}" class="date">{% if post == site.posts.first %}Latest Article &mdash;{% endif %}{{ post.date | date_to_string }}</a>
-          <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-        </li>
+      <li>
+      <a href="{{ post.url }}" class="date">{{ post.date | date_to_string }}</a>
+      <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+      </li>
       {% endfor %}
     </ul>
   </div>
 </section>
+

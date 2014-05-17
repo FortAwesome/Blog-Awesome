@@ -25,20 +25,21 @@ author:
     handle:       davegandy
     url:          http://twitter.com/davegandy
 
-font_awesome:
+fontawesome:
   version:        3.1.1
   url:            http://fontawesome.io
   legacy_url:     http://fortawesome.github.com/Font-Awesome/
   twitter:        fontawesome
+  tagline:        the iconic font and CSS framework
   github:
     url:          https://github.com/FortAwesome/Font-Awesome
     project:      Font-Awesome
     org:          FortAwesome
 
 bootstrap:
-  version:        2.3.1
+  version:        3.1.1
 jquery:
-  version:        1.9.1
+  version:        1.11.0
 google_analytics:
   tracking_id:    UA-30136587-1
 typekit:

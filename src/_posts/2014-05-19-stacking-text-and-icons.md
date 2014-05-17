@@ -2,6 +2,7 @@
 layout: post
 title:  "Stacking Text and Icons"
 date:   2014-05-19 09:00:00
+author: davegandy
 ---
 
 A request was recently made to Font Awesome to be able to stack regular text directly on top of Font Awesome
@@ -11,7 +12,7 @@ what we need.
 We'll first look at stacking the date of the month on top of our [fa-calendar-o icon](http://fontawesome.io/icon/calendar-o/)
 icon. When we re-wrote all of the CSS in FA v4, we separated out the icon font declaration into the `fa` class instead
 of using a star selector. This saves us the trouble of needing to add any `font-family` overrides in the CSS. This would
-not have been so trivial in 3.2. Here's the example:
+not have been so trivial in 3.2.
 
 #### HTML
 ```html

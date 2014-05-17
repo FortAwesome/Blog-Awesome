@@ -2,6 +2,7 @@
 layout: post
 title:  "Get the Most out of Font Awesome and BootstrapCDN"
 date:   2013-05-20 09:00:00
+author: davegandy
 ---
 
 The [easiest way to get started](http://fontawesome.io/get-started/#bootstrapcdn) with Font Awesome is to use [BootstrapCDN](http://www.bootstrapcdn.com/#tab_fontawesome). With a single line of code, you can get all associated Font Awesome CSS and font files served up. The content is even gzipped coming from Bootstrap CDN:

@@ -2,6 +2,7 @@
 layout: post
 title:  "Upcoming Changes in Font Awesome 3.2 and 4.0"
 date:   2013-06-04 09:00:00
+author: davegandy
 ---
 
 Many changes are in the works for future versions of Font Awesome. Already well underway, version 3.2 adds a host of new brand icons and creates a better build process, while 4.0 will break backward compatibility to bring Font Awesome in line with best practices for icon fonts that have developed over the past year.

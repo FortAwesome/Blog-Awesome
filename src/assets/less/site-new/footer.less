@@ -1,0 +1,41 @@
+//
+// Sticky Footer
+// --------------------------------------------------
+// make sure to set .sticky-footer()
+
+html, body { height: 100%; }
+
+.wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+.sticky-footer(@navbar-height, 60px); // sets default values for sticky footer
+
+.sticky-footer (@footer-height: @baseLineHeight * 4, @footer-margin-top: 70px) {
+  .wrap { margin: 0 auto -(@footer-height + @footer-margin-top + 1); }
+  .push { height: @footer-height + @footer-margin-top + 1; }
+  .footer { margin-top: @footer-margin-top; }
+}
+
+.footer .navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  li {
+    display: inline;
+    line-height: @navbar-height;
+  }
+  li > a {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    display: inline;
+  }
+  li + li:before {
+    content: "•";
+    color: @navbar-default-color;
+  }
+}

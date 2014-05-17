@@ -1,10 +1,24 @@
-<div class="navbar navbar-static-top hidden-print">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="{{ site.baseurl }}"><i class="fa fa-flag fa-lg"></i>&nbsp;{{ site.title }}</a>
-      <ul class="nav pull-right">
-        <li><a href="{{ site.font_awesome.url }}">The Official Font Awesome Blog</a></li>
-      </ul>
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".blog-awesome-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <a class="navbar-brand" href="{{ site.baseurl }}">
+        <i class="fa fa-flag fa-lg"></i>&nbsp; {{ site.title }}
+      </a>
+      <div class="navbar-text">The Official Font Awesome Blog</div>
     </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="blog-awesome-nav navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {% if site.posts.size > 1 %}<li><a href="{{ site.baseurl }}articles">All Articles</a></li>{% endif %}
+        <li><a href="http://github.com/{{ site.github }}">GitHub<span class="hidden-sm"> Project</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
   </div>
-</div>
+</nav>

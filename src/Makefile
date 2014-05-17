@@ -8,7 +8,7 @@ ASSET_DIR = assets
 SITE_LESS_DIR = ${ASSET_DIR}/less
 SITE_CSS_DIR = ${ASSET_DIR}/css
 
-SITE_LESS = ${SITE_LESS_DIR}/site/site.less
+SITE_LESS = ${SITE_LESS_DIR}/site-new/site.less
 SITE_CSS_MIN = ${SITE_CSS_DIR}/site.min.css
 SITE_CSS = ${SITE_CSS_DIR}/site.css
 
