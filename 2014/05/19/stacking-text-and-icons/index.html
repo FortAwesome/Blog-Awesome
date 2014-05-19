@@ -8,7 +8,7 @@
   <!-- Basic Page Needs
  ================================================== -->
   <meta charset="utf-8" />
-  <title>Blog Awesome &mdash; Upcoming Changes in Font Awesome 3.2 and 4.0</title>
+  <title>Blog Awesome &mdash; Stacking Text and Icons</title>
   <meta name="description" content="Blog Awesome &mdash;  ">
   <meta name="author" content="Dave Gandy">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,10 +93,10 @@
     <section class="row">
   <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
     <div class="post">
-      <h1><a href="">Upcoming Changes in Font Awesome 3.2 and 4.0</a></h1>
+      <h1><a href="">Stacking Text and Icons</a></h1>
       <p class="date">
-        <a href="http://twitter.com/davegandy">@davegandy</a> wrote this on 04 Jun 2013
-        <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fontawesome" data-url="http://blog.fontawesome.io/2013/06/04/upcoming-changes-in-font-awesome-3.2-and-4.0/" data-text="Upcoming Changes in Font Awesome 3.2 and 4.0:" data-related="davegandy">Tweet</a>
+        <a href="http://twitter.com/davegandy">@davegandy</a> wrote this on 19 May 2014
+        <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fontawesome" data-url="http://blog.fontawesome.io/2014/05/19/stacking-text-and-icons/" data-text="Stacking Text and Icons:" data-related="davegandy">Tweet</a>
       </p>
     </div>
   </div>
@@ -106,38 +106,52 @@
   <div class="col-md-2 col-sm-1">
     <nav class="hidden-xs">
       
-      <a href="/2013/05/20/get-the-most-out-font-awesome-and-bootstrapcdn/" class="nav-article-left"><i class="fa fa-chevron-left"></i></a>
+      <a href="/2013/06/04/upcoming-changes-in-font-awesome-3.2-and-4.0/" class="nav-article-left"><i class="fa fa-chevron-left"></i></a>
       
     </nav>
   </div>
   <div class="col-md-8 col-sm-10">
     <div id="post" class="post post-body">
-      <p>Many changes are in the works for future versions of Font Awesome. Already well underway, version 3.2 adds a host of new brand icons and creates a better build process, while 4.0 will break backward compatibility to bring Font Awesome in line with best practices for icon fonts that have developed over the past year.</p>
+      <p>Want to stack regular text on top of Font Awesome icons? It turns out that Font Awesome
+<a href="http://fontawesome.io/examples/#stacked">stacked icons</a> are already pretty much what we need.</p>
 
-<h3>Font Awesome 3.2</h3>
+<h3>FA-CALENDAR-O WITH DATE</h3>
 
-<p>Font Awesome 3.2 is primarily a date-driven release, as I&#39;m trying to keep smaller and more regular updates the norm. The release date for 3.2 is expected on Wednesday, June 12, so watch for it!</p>
+<p>When we re-wrote the CSS in FA version 4, we separated out the icon font declaration into the <code>fa</code> class instead
+of using a star selector. This saves us the trouble of needing to add any <code>font-family</code> overrides in the CSS. This would
+not have been so trivial in 3.2. Here&#39;s the HTML:</p>
 
-<p>I&#39;m now using GitHub&#39;s milestone functionality to track issues for new releases, so it&#39;s easy to see progress on the <a href="https://github.com/FortAwesome/Font-Awesome/issues?milestone=3&amp;state=open">Font Awesome 3.2 milestone</a>. As 3.2 is a date-driven release, I likely won&#39;t get to all the open issues in 3.2, but will push them into 4.0. I am trying to get all the open bugs addressed, however.</p>
+<h4>HTML</h4>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa-stack fa-3x&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-calendar-o fa-stack-2x&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">&quot;fa-stack-1x calendar-text&quot;</span><span class="nt">&gt;</span>27<span class="nt">&lt;/strong&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+</code></pre></div>
+<h4>CSS</h4>
 
-<p>So far in 3.2, I have so far added 48 new icons. I&#39;ve been going down the list of most commented icon requests to get a sense of which icons are in highest demand, with a special focus on international appeal. 8 of the world&#39;s most popular currencies have been added and over 20 new brand icons. And I&#39;m not done yet.</p>
+<p>The only CSS we really need to add is to vertically align the text, since the empty spot in the calendar isn&#39;t
+centered. So we&#39;ll push it down a tad:</p>
+<div class="highlight"><pre><code class="scss language-scss" data-lang="scss"><span class="nc">.calendar-text</span> <span class="p">{</span> <span class="na">margin-top</span><span class="o">:</span> <span class="mf">.3</span><span class="kt">em</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div>
+<h4>RESULT</h4>
 
-<p>I&#39;ve heard loud and clear that folks really want SCSS and SASS support, so we&#39;ll make sure that&#39;s in there and in good shape for future maintainability.</p>
+<p data-height="170" data-theme-id="6187" data-slug-hash="dlCuq" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/davegandy/pen/dlCuq/'>dlCuq</a> by Dave Gandy (<a href='http://codepen.io/davegandy'>@davegandy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
-<p>And a big thank you to <a href="https://twitter.com/robmadole">@robmadole</a> for helping out so much to create a fantastic build system for Font Awesome. All CSS, LESS, and documentation generation is driven off a master icons.yml file. This means no more silly errors in <a href="https://github.com/FortAwesome/Font-Awesome/issues/1067">updating version in documentation</a>, <a href="https://github.com/FortAwesome/Font-Awesome/issues/1151">missing icons in documentation</a>, etc. Oh, and <a href="http://jekyllrb.com">Jekyll</a> absolutely kicks ass for static website generation.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
-<h3>Font Awesome 4.0</h3>
+<h3>FA-COMMENT &amp; FA-FILE-O</h3>
 
-<p>Since Font Awesome 1.0 was released over a year ago, we&#39;ve learned some things about the best way to serve icon fonts. Version 4.0 will have a prefix class (likely <code>fa</code> or <code>fontawesome</code>) along with the name of the icon (<code>fa-heart</code> or <code>fontawesome-heart</code>). As the CSS will no longer contain matching selectors, CSS rendering time will speed up quite a bit. We&#39;ll also be de-emphasizing IE7 support (though it will stay at the basic level since the cost is minimal). And we&#39;ll add <a href="http://foundation.zurb.com">Foundation</a> support and dig into how feasible GSUB support will be.</p>
+<p>We threw in a couple of other examples in there too. The <a href="http://fontawesome.io/icon/comment/">comment icon</a> already
+happens to align vertically, so there&#39;s no extra CSS to add. The <a href="http://fontawesome.io/icon/file-o/">file-o icon</a> also
+works great with text after we give it a <code>.2em</code> top margin.</p>
 
-<p>Want to see how things are progressing or get details on the issues? I&#39;m keeping track of the release in <a href="https://github.com/FortAwesome/Font-Awesome/issues?milestone=2&amp;state=open">Font Awesome&#39;s 4.0 milestone</a>.</p>
+<p>Have any great use cases for stacking text on top of icons? Drop us a note on Twitter at
+<a href="https://twitter.com/fontawesome">@fontawesome</a>.</p>
 
     </div>
   </div>
   <div class="col-md-2 col-sm-1">
     <nav class="hidden-xs">
-      
-      <a href="/2014/05/19/stacking-text-and-icons/" class="nav-article-right"><i class="fa fa-chevron-right"></i></a>
       
     </nav>
   </div>

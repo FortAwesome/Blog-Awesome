@@ -1,0 +1,16 @@
+#carbonads-container {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  margin: 0;
+  text-align: right;
+  z-index: (@zindex-navbar + 1);
+  .carbonad {
+    border-radius: @border-radius-large;
+    border: solid 1px @table-border-color;
+    background-color: @well-bg;
+    text-align: right;
+  }
+  .carbonad-tag { width: 119px; }
+  .carbonad-tag a { font-weight: normal; }
+}

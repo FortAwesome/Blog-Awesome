@@ -17,14 +17,15 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
+  <link href='http://blog.fontawesome.io/feed.xml' rel='alternate' type='application/atom+xml'>
+
   <!-- CSS
  ================================================== -->
 
   <link rel="stylesheet" href="/assets/css/pygments.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/site.css" media="screen">
-  <!--[if IE 7]>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome-ie7.min.css">
-  <![endif]-->
+
   <!-- Le fav and touch icons -->
   <link rel="shortcut icon" href="/assets/ico/favicon.ico">
 
@@ -46,27 +47,28 @@
 </head>
 <body>
 <div class="wrap"> <!-- necessary for sticky footer. wrap all content except footer -->
-  <!--<div class="navbar navbar-static-top hidden-print">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="/"><i class="icon-flag icon-large"></i>&nbsp;Blog Awesome</a>
-      <ul class="nav pull-right">
-        <li><a href="http://fontawesome.io">The Official Font Awesome Blog</a></li>
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".blog-awesome-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <a class="navbar-brand" href="/">
+        <i class="fa fa-flag fa-lg"></i>&nbsp; Blog Awesome
+      </a>
+      <div class="navbar-text">The Official Font Awesome Blog</div>
+    </div>
+
+    <div class="blog-awesome-nav navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/articles">All Articles</a></li>
+        <li><a href="https://github.com/FortAwesome/Font-Awesome">GitHub<span class="hidden-sm"> Project</span></a></li>
       </ul>
     </div>
   </div>
-</div>
--->
-  <div class="navbar navbar-static-top hidden-print">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="/"><i class="icon-flag icon-large"></i>&nbsp;Blog Awesome</a>
-      <ul class="nav pull-right">
-        <li><a href="http://fontawesome.io">The Official Font Awesome Blog</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+</nav>
 
   <div class="social hidden-phone">
   <div class="container">
@@ -74,7 +76,7 @@
       <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=FortAwesome&repo=Font-Awesome&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe></li>
       <li><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=FortAwesome&repo=Font-Awesome&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe></li>
       <li class="follow-btn"><a href="https://twitter.com/fontawesome" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @fontawesome</a></li>
-      <li class="tweet-btn"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fontawesome.io" data-text="Font Awesome, the iconic font designed for Bootstrap" data-counturl="http://fortawesome.github.com/Font-Awesome/" data-count="horizontal" data-via="fontawesome" data-related=":Creator of Font Awesome">Tweet</a></li>
+      <li class="tweet-btn hidden-xs"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fontawesome.io" data-text="Font Awesome, fontawesome" data-counturl="http://fortawesome.github.com/Font-Awesome/" data-count="horizontal" data-via="fontawesome" data-related=":Creator of Font Awesome">Tweet</a></li>
     </ul>
   </div>
 </div>
@@ -89,40 +91,49 @@
 
   <div class="container">
     <section class="row">
-  <div class="span8 offset2">
+  <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <h1 class="all-articles">All Articles</h1>
     <ul class="posts">
       
-        <li class="first">
-          <a href="/2013/06/04/upcoming-changes-in-font-awesome-3.2-and-4.0/" class="date">Latest Article &mdash;04 Jun 2013</a>
-          <a href="/2013/06/04/upcoming-changes-in-font-awesome-3.2-and-4.0/" class="title">Upcoming Changes in Font Awesome 3.2 and 4.0</a>
-        </li>
+      <li>
+      <a href="/2014/05/19/stacking-text-and-icons/" class="date">19 May 2014</a>
+      <a href="/2014/05/19/stacking-text-and-icons/" class="title">Stacking Text and Icons</a>
+      </li>
       
-        <li>
-          <a href="/2013/05/20/get-the-most-out-font-awesome-and-bootstrapcdn/" class="date">20 May 2013</a>
-          <a href="/2013/05/20/get-the-most-out-font-awesome-and-bootstrapcdn/" class="title">Get the Most out of Font Awesome and BootstrapCDN</a>
-        </li>
+      <li>
+      <a href="/2013/06/04/upcoming-changes-in-font-awesome-3.2-and-4.0/" class="date">04 Jun 2013</a>
+      <a href="/2013/06/04/upcoming-changes-in-font-awesome-3.2-and-4.0/" class="title">Upcoming Changes in Font Awesome 3.2 and 4.0</a>
+      </li>
+      
+      <li>
+      <a href="/2013/05/20/get-the-most-out-font-awesome-and-bootstrapcdn/" class="date">20 May 2013</a>
+      <a href="/2013/05/20/get-the-most-out-font-awesome-and-bootstrapcdn/" class="title">Get the Most out of Font Awesome and BootstrapCDN</a>
+      </li>
       
     </ul>
   </div>
 </section>
 
+
   </div>
   <div class="push"><!-- necessary for sticky footer --></div>
 </div>
-<footer class="footer text-center">
-  <ul class="unstyled">
-    <li><a href="/">Home</a></li>
-    <li>&nbsp; &middot; &nbsp;<a href="/articles">Articles</a></li>
-    <li>&nbsp; &middot; &nbsp;<a href="http://fontawesome.io">Font Awesome</a><br class="visible-phone"></li>
-    <li><span class="hidden-phone">&nbsp; &middot; &nbsp;</span><a href="http://twitter.com/fontawesome">@fontawesome</a></li>
-    <li>&nbsp; &middot; &nbsp;<a href="mailto:dave@fontawesome.io">Email</a></li>
-  </ul>
-</footer>
+<nav class="navbar navbar-default navbar-static-bottom footer" role="navigation">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/articles">All Articles</a></li>
+      <li><a href="http://fontawesome.io">Font Awesome</a></li>
+      <li><a href="http://twitter.com/fontawesome">@fontawesome</a></li>
+      <li><a href="https://github.com/FortAwesome/Font-Awesome">GitHub Project</a></li>
+    </ul>
+  </div>
+</nav>
 
 
 <script src="http://platform.twitter.com/widgets.js"></script>
-<script src="/assets/js/jquery-1.9.1.min.js"></script>
-<script src="/assets/js/bootstrap-2.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>
