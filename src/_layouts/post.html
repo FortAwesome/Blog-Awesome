@@ -6,7 +6,10 @@ layout: base
   <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
     <div class="post">
       <h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
-      <p class="date"><a href="http://twitter.com/{{ page.author }}">@{{ page.author }}</a> wrote this on {{ page.date | date_to_string }}</p>
+      <p class="date">
+        <a href="http://twitter.com/{{ page.author }}">@{{ page.author }}</a> wrote this on {{ page.date | date_to_string }}
+        <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{ site.fontawesome.twitter }}" data-url="{{ site.root_url }}{{ page.url }}" data-text="{{ page.title }}:" data-related="{{ page.author }}">Tweet</a>
+      </p>
     </div>
   </div>
 </section>

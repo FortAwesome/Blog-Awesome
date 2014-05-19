@@ -15,6 +15,7 @@ redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 
 title:            Blog Awesome
+root_url:         http://blog.fontawesome.io
 author:
   name:           Dave Gandy
   email:          dave@fontawesome.io

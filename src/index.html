@@ -8,7 +8,10 @@ layout: base
   <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
     <div class="post">
       <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      <p class="date"><a href="http://twitter.com/{{ post.author }}">@{{ post.author }}</a> wrote this on {{ post.date | date_to_string }}</p>
+      <p class="date">
+        <a href="http://twitter.com/{{ post.author }}">@{{ post.author }}</a> wrote this on {{ post.date | date_to_string }}
+        <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{ site.fontawesome.twitter }}" data-url="{{ site.root_url }}{{ post.url }}" data-text="{{ post.title }}:" data-related="{{ post.author }}">Tweet</a>
+      </p>
       <div class="post-body">
         {{ post.content }}
       </div>
