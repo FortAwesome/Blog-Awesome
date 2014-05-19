@@ -8,6 +8,8 @@ author: davegandy
 Want to stack regular text on top of Font Awesome icons? It turns out that Font Awesome
 [stacked icons](http://fontawesome.io/examples/#stacked) are already pretty much what we need.
 
+### FA-CALENDAR-O WITH DATE
+
 When we re-wrote the CSS in FA version 4, we separated out the icon font declaration into the `fa` class instead
 of using a star selector. This saves us the trouble of needing to add any `font-family` overrides in the CSS. This would
 not have been so trivial in 3.2. Here's the HTML:
@@ -33,9 +35,12 @@ centered. So we'll push it down a tad:
 <p data-height="170" data-theme-id="6187" data-slug-hash="dlCuq" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/davegandy/pen/dlCuq/'>dlCuq</a> by Dave Gandy (<a href='http://codepen.io/davegandy'>@davegandy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-We threw in a couple of other ideas in there too. The [comment icon](http://fontawesome.io/icon/comment/) already
-happens to align vertically. The [file-o icon](http://fontawesome.io/icon/file-o/) also works great with text after we
-give it a top margin.
+
+### FA-COMMENT & FA-FILE-O
+
+We threw in a couple of other examples in there too. The [comment icon](http://fontawesome.io/icon/comment/) already
+happens to align vertically, so there's no extra CSS to add. The [file-o icon](http://fontawesome.io/icon/file-o/) also
+works great with text after we give it a `.02em` top margin.
 
 Have any great use cases for stacking text on top of icons? Drop us a note on Twitter at
 [@fontawesome](https://twitter.com/fontawesome).
