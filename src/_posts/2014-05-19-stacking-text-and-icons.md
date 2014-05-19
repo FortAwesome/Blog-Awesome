@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  "Stacking Text and Icons"
-date:   2014-05-19 09:00:00
-author: davegandy
+layout:       post
+title:        Stacking Text and Icons
+description:  It turns out stacking text and icons isn't so hard.
+date:         2014-05-19 09:00:00
+author:       davegandy
 ---
 
 Want to stack regular text on top of Font Awesome icons? It turns out that Font Awesome

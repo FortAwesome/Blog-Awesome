@@ -9,9 +9,15 @@
  ================================================== -->
   <meta charset="utf-8" />
   <title>{{ site.title }}{% if page.title %} &mdash; {{ page.title }}{% endif %}</title>
-  <meta name="description" content="{{ site.title }} &mdash; {{ site.tagline }} ">
+  <meta name="description" content="{{ site.title }} &mdash; {{ site.description }} ">
   <meta name="author" content="Dave Gandy">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="{{ site.title }}: {{ page.title }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
+
 
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
