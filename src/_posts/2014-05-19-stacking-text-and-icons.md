@@ -40,7 +40,7 @@ centered. So we'll push it down a tad:
 
 We threw in a couple of other examples in there too. The [comment icon](http://fontawesome.io/icon/comment/) already
 happens to align vertically, so there's no extra CSS to add. The [file-o icon](http://fontawesome.io/icon/file-o/) also
-works great with text after we give it a `.02em` top margin.
+works great with text after we give it a `.2em` top margin.
 
 Have any great use cases for stacking text on top of icons? Drop us a note on Twitter at
 [@fontawesome](https://twitter.com/fontawesome).

@@ -1,7 +1,7 @@
 safe:             false
 port:             7993
 baseurl:          /  # Where GitHub serves the project up from
-url:              http://localhost:7993
+url:              http://blog.fontawesome.io
 
 source:           src
 destination:      _gh_pages
@@ -15,7 +15,7 @@ redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 
 title:            Blog Awesome
-root_url:         http://blog.fontawesome.io
+description:      The Official Font Awesome Blog
 author:
   name:           Dave Gandy
   email:          dave@fontawesome.io
