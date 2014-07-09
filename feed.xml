@@ -7,6 +7,61 @@
     <atom:link href="http://blog.fontawesome.io/feed.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Help Give Font Awesome MAJOR upgrades!</title>
+      <description>&lt;h3&gt;TL;DR&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;3,000 &lt;a href=&quot;https://www.kickstarter.com/projects/232193852/font-awesome-black-tie&quot;&gt;Black Tie Kickstarter&lt;/a&gt; backers at any
+dollar amount gives the original Font Awesome major upgrades. Only 7 days left to back this project!&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;Thank You&lt;/h2&gt;
+
+&lt;p&gt;First of all, thank you to many of you for helping Black Tie reach its initial goal in just 6 days. I&amp;#39;m crazy excited
+to get started and make Black Tie awesome!&lt;/p&gt;
+
+&lt;p&gt;Since launching this project, I’ve received some questions about the future of the original Font Awesome, as well as
+requests for improvements to it. Although I am venturing into the commercial realm with Black Tie, &lt;strong&gt;I am completely
+committed to maintaining and improving the original Font Awesome&lt;/strong&gt;. To show that commitment, I’ve added individual and
+group rewards to the Black Tie Kickstarter, which will specifically benefit the original Font Awesome.&lt;/p&gt;
+
+&lt;h2&gt;I Need Your Help&lt;/h2&gt;
+
+&lt;p&gt;As a thank you for helping me spread the word about Black Tie, I will give the original Font Awesome some major upgrades
+if the Kickstarter reaches 3,000 backers &lt;strong&gt;at any dollar amount&lt;/strong&gt;. Even a single $1 donation counts toward the backer total.
+So please &lt;a href=&quot;https://www.kickstarter.com/projects/232193852/font-awesome-black-tie&quot;&gt;back Black Tie&lt;/a&gt; and help me
+spread the word! Twitter, Facebook, relevant forums. Any and every donation helps!&lt;/p&gt;
+
+&lt;h2&gt;Upgrades to the original Font Awesome&lt;/h2&gt;
+
+&lt;p&gt;If the &lt;a href=&quot;https://www.kickstarter.com/projects/232193852/font-awesome-black-tie&quot;&gt;Black Tie Kickstarter&lt;/a&gt; reaches 3,000
+backers &lt;strong&gt;at any dollar amount&lt;/strong&gt;, Font Awesome will see some major upgrades very soon:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;NEW - Add SVG support to the original Font Awesome.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Retool every icon from scratch. It will have the same great style, and I&amp;#39;ll optimize points for smaller file size
+per icon and better visual consistency.&lt;/li&gt;
+&lt;li&gt;Improve icon search considerably and give better icon previews. No more squinting at the documentation!&lt;/li&gt;
+&lt;li&gt;Further improve the documentation for each icon and show exactly how it fits into the 14 pixel grid.&lt;/li&gt;
+&lt;li&gt;Add more how-tos, including pixel-precise icon positioning.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;T-Shirt-only Reward&lt;/h2&gt;
+
+&lt;p&gt;For those that would like to specifically support the original Font Awesome, I&amp;#39;ve also added a reward that includes
+a limited edition Font Awesome T-shirt.&lt;/p&gt;
+
+&lt;h3&gt;What if we don&amp;#39;t hit 3,000 backers?&lt;/h3&gt;
+
+&lt;p&gt;Font Awesome is currently on nearly a million websites – so I’m really hoping we can find 3,000 backers who are willing
+to support upgrades to the project! If not, Font Awesome will still get these upgrades eventually. As I said,
+I&amp;#39;m committed to continuing to improve Font Awesome. But support from the Kickstarter means I&amp;#39;ll be able to prioritize
+it much higher and get to it much more quickly. If you&amp;#39;ve found Font Awesome useful, please consider supporting this
+project so I can get these improvements made as soon as possible!&lt;/p&gt;
+</description>
+      <link>http://blog.fontawesome.io/2014/07/09/help-give-font-awesome-major-upgrades/</link>
+      <guid isPermaLink="true">http://blog.fontawesome.io/2014/07/09/help-give-font-awesome-major-upgrades/</guid>
+    </item>
+    
+    <item>
       <title>Stacking Text and Icons</title>
       <description>&lt;p&gt;Want to stack regular text on top of Font Awesome icons? It turns out that Font Awesome
 &lt;a href=&quot;http://fontawesome.io/examples/#stacked&quot;&gt;stacked icons&lt;/a&gt; are already pretty much what we need.&lt;/p&gt;
@@ -18,7 +73,7 @@ of using a star selector. This saves us the trouble of needing to add any &lt;co
 not have been so trivial in 3.2. Here&amp;#39;s the HTML:&lt;/p&gt;
 
 &lt;h4&gt;HTML&lt;/h4&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;fa-stack fa-3x&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;fa-stack fa-3x&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;i&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;fa fa-calendar-o fa-stack-2x&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;strong&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;fa-stack-1x calendar-text&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;27&lt;span class=&quot;nt&quot;&gt;&amp;lt;/strong&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
@@ -27,7 +82,7 @@ not have been so trivial in 3.2. Here&amp;#39;s the HTML:&lt;/p&gt;
 
 &lt;p&gt;The only CSS we really need to add is to vertically align the text, since the empty spot in the calendar isn&amp;#39;t
 centered. So we&amp;#39;ll push it down a tad:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.calendar-text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;margin-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;.3&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;scss language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.calendar-text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;margin-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;.3&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;RESULT&lt;/h4&gt;
 
@@ -77,14 +132,14 @@ works great with text after we give it a &lt;code&gt;.2em&lt;/code&gt; top margi
     <item>
       <title>Get the Most out of Font Awesome and BootstrapCDN</title>
       <description>&lt;p&gt;The &lt;a href=&quot;http://fontawesome.io/get-started/#bootstrapcdn&quot;&gt;easiest way to get started&lt;/a&gt; with Font Awesome is to use &lt;a href=&quot;http://www.bootstrapcdn.com/#tab_fontawesome&quot;&gt;BootstrapCDN&lt;/a&gt;. With a single line of code, you can get all associated Font Awesome CSS and font files served up. The content is even gzipped coming from Bootstrap CDN:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This is a fantastic way to get up and running with Font Awesome for the first time, as BootstrapCDN also takes care of serving up font files with all the &lt;a href=&quot;http://stackoverflow.com/questions/2871655/proper-mime-type-for-fonts#answer-10864297&quot;&gt;proper MIME types&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3&gt;Customizing Font Awesome&lt;/h3&gt;
 
 &lt;p&gt;This is all well and good, but what about folks who want to customize Font Awesome? Turns out you can serve just the fonts directly from BootstrapCDN from your own customized version of Font Awesome. After &lt;a href=&quot;http://fontawesome.io/assets/font-awesome.zip&quot;&gt;downloading&lt;/a&gt; the latest version of Font Awesome, open up the &lt;code&gt;font-awesome/less&lt;/code&gt; directory. Then, edit &lt;code&gt;variables.less&lt;/code&gt; and change the &lt;code&gt;@FontAwesomePath&lt;/code&gt; variable to:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@FontAwesomePath&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/font&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;scss language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@FontAwesomePath&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/font&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This gives you all the power to customize Font Awesome styles however you like and still get all the benefits and ease of using BootstrapCDN.&lt;/p&gt;
 </description>

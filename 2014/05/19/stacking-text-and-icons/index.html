@@ -78,13 +78,14 @@
   </div>
 </div>
 
-  <div id="carbonads-container">
-  <div class="carbonad">
-    <div id="azcarbon"></div>
-    <script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/32291/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+  <!--<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+      <script type="text/javascript" src="//cdn.fusionads.net/fusion.js?zoneid=1332&serve=C6SDP2Y&placement=fontawesome" id="_fusionads_js"></script>
+    </div>
   </div>
 </div>
-
+-->
 
   <div class="container">
     <section class="row">
@@ -119,7 +120,7 @@ of using a star selector. This saves us the trouble of needing to add any <code>
 not have been so trivial in 3.2. Here&#39;s the HTML:</p>
 
 <h4>HTML</h4>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa-stack fa-3x&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa-stack fa-3x&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-calendar-o fa-stack-2x&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
   <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">&quot;fa-stack-1x calendar-text&quot;</span><span class="nt">&gt;</span>27<span class="nt">&lt;/strong&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
@@ -128,7 +129,7 @@ not have been so trivial in 3.2. Here&#39;s the HTML:</p>
 
 <p>The only CSS we really need to add is to vertically align the text, since the empty spot in the calendar isn&#39;t
 centered. So we&#39;ll push it down a tad:</p>
-<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.calendar-text</span> <span class="p">{</span> <span class="na">margin-top</span><span class="o">:</span> <span class="mf">.3</span><span class="kt">em</span><span class="p">;</span> <span class="p">}</span>
+<div class="highlight"><pre><code class="scss language-scss" data-lang="scss"><span class="nc">.calendar-text</span> <span class="p">{</span> <span class="na">margin-top</span><span class="o">:</span> <span class="mf">.3</span><span class="kt">em</span><span class="p">;</span> <span class="p">}</span>
 </code></pre></div>
 <h4>RESULT</h4>
 
@@ -149,6 +150,8 @@ works great with text after we give it a <code>.2em</code> top margin.</p>
   </div>
   <div class="col-md-2 col-sm-1">
     <nav class="hidden-xs">
+      
+      <a href="/2014/07/09/help-give-font-awesome-major-upgrades/" class="nav-article-right"><i class="fa fa-chevron-right"></i></a>
       
     </nav>
   </div>
