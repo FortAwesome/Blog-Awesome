@@ -6,13 +6,13 @@ date:         2014-07-09 12:00:00
 author:       davegandy
 ---
 
-### TL;DR
+<h2 class="margin-top-none">TL;DR</h2>
 _3,000 [Black Tie Kickstarter](https://www.kickstarter.com/projects/232193852/font-awesome-black-tie) backers at any
 dollar amount gives the original Font Awesome major upgrades. Only 7 days left to back this project!_
 
 ## Thank You
 
-First of all, thank you to many of you for helping Black Tie reach its initial goal in just 6 days. I'm crazy excited
+First of all, thank you to so many of you for helping Black Tie reach its initial goal in just 6 days. I'm crazy excited
 to get started and make Black Tie awesome!
 
 Since launching this project, I’ve received some questions about the future of the original Font Awesome, as well as
@@ -22,10 +22,11 @@ group rewards to the Black Tie Kickstarter, which will specifically benefit the 
 
 ## I Need Your Help
 
-As a thank you for helping me spread the word about Black Tie, I will give the original Font Awesome some major upgrades
-if the Kickstarter reaches 3,000 backers **at any dollar amount**. Even a single $1 donation counts toward the backer total.
-So please [back Black Tie](https://www.kickstarter.com/projects/232193852/font-awesome-black-tie) and help me
-spread the word! Twitter, Facebook, relevant forums. Any and every donation helps!
+With only 7 days remaining, I really need your help to get the word out. As a thank you for helping me spread the word
+about Black Tie, I will give the original Font Awesome some major upgrades if the Kickstarter reaches 3,000 backers
+**at any dollar amount**. Even a single $1 donation counts toward the backer total. So please
+[back Black Tie](https://www.kickstarter.com/projects/232193852/font-awesome-black-tie) and help me spread the word!
+Twitter, Facebook, relevant forums. Any and every donation helps!
 
 ## Upgrades to the original Font Awesome
 
