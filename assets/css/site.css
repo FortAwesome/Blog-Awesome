@@ -4679,9 +4679,11 @@ body {
   border-radius: 4px;
   width: 150px;
   font-size: 13px;
+  text-align: right;
 }
 #fusionads a {
   font-weight: normal;
+  color: #555555;
 }
 #fusionads .fusion-img img {
   padding-bottom: 5px;
@@ -5401,6 +5403,7 @@ body {
     border-radius: 6px;
     font-size: 14px;
     margin-bottom: 22px;
+    text-align: left;
   }
   #fusionads .fusion-img img {
     float: left;
@@ -5499,6 +5502,7 @@ body {
     bottom: auto;
     font-size: 13px;
     margin-bottom: 22px;
+    text-align: left;
   }
   #fusionads .fusion-img img {
     float: left;
