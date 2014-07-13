@@ -48,7 +48,7 @@ a limited edition Font Awesome T-shirt.
 ### What if we don't hit 3,000 backers?
 
 Font Awesome is currently on nearly a million websites – so I’m really hoping we can find 3,000 backers who are willing
-to support upgrades to the project! If not, Font Awesome will still get these upgrades eventually. As I said,
+to support upgrades to the project! If not, Font Awesome will still get most of these upgrades eventually. As I said,
 I'm committed to continuing to improve Font Awesome. But support from the Kickstarter means I'll be able to prioritize
 it much higher and get to it much more quickly. If you've found Font Awesome useful, please consider supporting this
 project so I can get these improvements made as soon as possible!
