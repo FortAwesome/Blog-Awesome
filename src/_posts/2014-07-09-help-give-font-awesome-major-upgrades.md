@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        Help Give Font Awesome MAJOR upgrades!
-description:  It turns out stacking text and icons isn't so hard.
+description:  Help give Font Awesome MAJOR upgrades!
 date:         2014-07-09 12:00:00
 author:       davegandy
 ---

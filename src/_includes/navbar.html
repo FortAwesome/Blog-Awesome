@@ -6,7 +6,7 @@
         <i class="fa fa-bars"></i>
       </button>
 
-      <a class="navbar-brand" href="{{ site.baseurl }}">
+      <a class="navbar-brand" href="/">
         <i class="fa fa-flag fa-lg"></i>&nbsp; {{ site.title }}
       </a>
       <div class="navbar-text">The Official Font Awesome Blog</div>
@@ -14,8 +14,8 @@
 
     <div class="blog-awesome-nav navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        {% if site.posts.size > 1 %}<li><a href="{{ site.baseurl }}articles">All Articles</a></li>{% endif %}
-        <li><a href="{{ site.fontawesome.github.url }}">GitHub<span class="hidden-sm"> Project</span></a></li>
+        {% if site.posts.size > 1 %}<li><a href="/articles">All Articles</a></li>{% endif %}
+        <li><a href="{{ site.fontawesome.url }}">Font Awesome</a></li>
       </ul>
     </div>
   </div>
