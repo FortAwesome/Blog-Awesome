@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Awesome &mdash; Help Give Font Awesome MAJOR upgrades!</title>
+  <title>Blog Awesome &mdash; Custom File Types with Stacked Icons</title>
 
   <meta name="description" content="Blog Awesome &mdash; The Official Font Awesome Blog ">
   <meta name="author" content="Dave Gandy">
-  <meta property="og:title" content="Blog Awesome: Help Give Font Awesome MAJOR upgrades!" />
+  <meta property="og:title" content="Blog Awesome: Custom File Types with Stacked Icons" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://blog.fontawesome.io/2014/07/09/help-give-font-awesome-major-upgrades/" />
-  <meta property="og:description" content="Help give Font Awesome MAJOR upgrades!" />
+  <meta property="og:url" content="http://blog.fontawesome.io/2014/09/25/custom-file-types-with-stacked-icons/" />
+  <meta property="og:description" content="Get any kind of file type icon by using stacked icons." />
 
   <link href='http://blog.fontawesome.io/feed.xml' rel='alternate' type='application/atom+xml'>
 
@@ -91,10 +91,10 @@
     <section class="row">
   <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
     <div class="post link-dotted">
-      <h1><a href="">Help Give Font Awesome MAJOR upgrades!</a></h1>
+      <h1><a href="">Custom File Types with Stacked Icons</a></h1>
       <p class="date">
-        <a href="http://twitter.com/davegandy">@davegandy</a> wrote this on 09 Jul 2014
-        <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fontawesome" data-url="http://blog.fontawesome.io/2014/07/09/help-give-font-awesome-major-upgrades/" data-text="Help Give Font Awesome MAJOR upgrades!:" data-related="davegandy">Tweet</a>
+        <a href="http://twitter.com/davegandy">@davegandy</a> wrote this on 25 Sep 2014
+        <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fontawesome" data-url="http://blog.fontawesome.io/2014/09/25/custom-file-types-with-stacked-icons/" data-text="Custom File Types with Stacked Icons:" data-related="davegandy">Tweet</a>
       </p>
     </div>
   </div>
@@ -104,68 +104,64 @@
   <div class="col-md-2 col-sm-1">
     <nav class="hidden-xs">
       
-      <a href="/2014/05/19/stacking-text-and-icons/" class="nav-article-left"><i class="fa fa-chevron-left"></i></a>
+      <a href="/2014/07/09/help-give-font-awesome-major-upgrades/" class="nav-article-left"><i class="fa fa-chevron-left"></i></a>
       
     </nav>
   </div>
   <div class="col-md-8 col-sm-10">
     <div id="post" class="post post-body link-dotted">
-      <h2 class="margin-top-none">TL;DR</h2>
+      <p>Font Awesome comes with lots of file type icons already. But what if you have a file type that&#39;s not a part of the set?
+No problem.</p>
 
-<p><em>3,000 <a href="https://www.kickstarter.com/projects/232193852/font-awesome-black-tie">Black Tie Kickstarter</a> backers at any
-dollar amount gives the original Font Awesome major upgrades. Only 7 days left to back this project!</em></p>
+<p>With a bit of custom CSS, we can get just about any file type icon we need. By using
+<a href="http://fontawesome.io/examples/#stacked">stacked icons</a>, we can mix existing file type icons alongside our custom file
+types. And we can stack icons or text just as easily.</p>
 
-<h2>Thank You</h2>
+<p data-height="150" data-theme-id="6187" data-slug-hash="KnzJg" data-default-tab="result" data-user="davegandy" class='codepen'>See the Pen <a href='http://codepen.io/davegandy/pen/KnzJg/'>KnzJg</a> by Dave Gandy (<a href='http://codepen.io/davegandy'>@davegandy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
-<p>First of all, thank you to so many of you for helping Black Tie reach its initial goal in just 6 days. I&#39;m crazy excited
-to get started and make Black Tie awesome!</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
 
-<p>Since launching this project, I’ve received some questions about the future of the original Font Awesome, as well as
-requests for improvements to it. Although I am venturing into the commercial realm with Black Tie, <strong>I am completely
-committed to maintaining and improving the original Font Awesome</strong>. To show that commitment, I’ve added individual and
-group rewards to the Black Tie Kickstarter, which will specifically benefit the original Font Awesome.</p>
+<p>The first <a href="http://fontawesome.io/icon/file-audio-o/">audio file</a> type icon is included in Font Awesome already. The
+second, representing a settings document, is a <a href="http://fontawesome.io/icon/cog/">gear icon</a> stacked on an <a href="http://fontawesome.io/icon/file-o/">outlined file
+icon</a>. And the third is an easy way to generate an icon for any three letter
+filetype.</p>
 
-<h2>I Need Your Help</h2>
+<h4>HTML</h4>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-file-audio-o&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa-stack&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-gear fa-stack-1x&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-file-o fa-stack-2x&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa-stack&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa-stack-1x filetype-text&quot;</span><span class="nt">&gt;</span>PSD<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-file-o fa-stack-2x&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+</code></pre></div>
+<h4>CSS</h4>
 
-<p>With only 7 days remaining, I really need your help to get the word out. As a thank you for helping me spread the word
-about Black Tie, I will give the original Font Awesome some major upgrades if the Kickstarter reaches 3,000 backers
-<strong>at any dollar amount</strong>. Even a single $1 donation counts toward the backer total. So please
-<a href="https://www.kickstarter.com/projects/232193852/font-awesome-black-tie">back Black Tie</a> and help me spread the word!
-Twitter, Facebook, relevant forums. Any and every donation helps!</p>
+<p>The first thing we need to do is push down the stacked icons and text so they align in the lower section of the outlined
+file icon. Then we size down the <code>.fa-stack</code> to make it the same size as our normal icons, then adjust the stack
+vertically so things are properly aligned. Finally, we grab an excellent condensed Google Web font so we can make the
+text as large as possible.</p>
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.fa-stack-1x</span> <span class="p">{</span> <span class="na">top</span><span class="o">:</span> <span class="mf">.25</span><span class="kt">em</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.fa-stack</span> <span class="p">{</span>
+  <span class="na">font-size</span><span class="o">:</span> <span class="mf">.5</span><span class="kt">em</span><span class="p">;</span>
+  <span class="na">vertical-align</span><span class="o">:</span> <span class="mi">-16</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.filetype-text</span> <span class="p">{</span>
+  <span class="na">font-size</span><span class="o">:</span> <span class="mf">.7</span><span class="kt">em</span><span class="p">;</span>
+  <span class="na">font-weight</span><span class="o">:</span> <span class="mi">700</span><span class="p">;</span>
+  <span class="na">font-family</span><span class="o">:</span> <span class="s1">&#39;</span><span class="s2">Oswald&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Et voilà. Custom file types using stacked icons.</p>
 
-<h2>Upgrades to the original Font Awesome</h2>
-
-<p>If the <a href="https://www.kickstarter.com/projects/232193852/font-awesome-black-tie">Black Tie Kickstarter</a> reaches 3,000
-backers <strong>at any dollar amount</strong>, Font Awesome will see some major upgrades very soon:</p>
-
-<ul>
-<li><strong>NEW - Add SVG support to the original Font Awesome.</strong></li>
-<li>Retool every icon from scratch. It will have the same great style, and I&#39;ll optimize points for smaller file size
-per icon and better visual consistency.</li>
-<li>Improve icon search considerably and give better icon previews. No more squinting at the documentation!</li>
-<li>Further improve the documentation for each icon and show exactly how it fits into the 14 pixel grid.</li>
-<li>Add more how-tos, including pixel-precise icon positioning.</li>
-</ul>
-
-<h2>T-Shirt-only Reward</h2>
-
-<p>For those that would like to specifically support the original Font Awesome, I&#39;ve also added a reward that includes
-a limited edition Font Awesome T-shirt.</p>
-
-<h3>What if we don&#39;t hit 3,000 backers?</h3>
-
-<p>Font Awesome is currently on nearly a million websites – so I’m really hoping we can find 3,000 backers who are willing
-to support upgrades to the project! If not, Font Awesome will still get most of these upgrades eventually. As I said,
-I&#39;m committed to continuing to improve Font Awesome. But support from the Kickstarter means I&#39;ll be able to prioritize
-it much higher and get to it much more quickly. If you&#39;ve found Font Awesome useful, please consider supporting this
-project so I can get these improvements made as soon as possible!</p>
+<p>Have some improvements for the method above? Drop us a note on Twitter at <a href="https://twitter.com/fontawesome">@fontawesome</a>.</p>
 
     </div>
   </div>
   <div class="col-md-2 col-sm-1">
     <nav class="hidden-xs">
-      
-      <a href="/2014/09/25/custom-file-types-with-stacked-icons/" class="nav-article-right"><i class="fa fa-chevron-right"></i></a>
       
     </nav>
   </div>

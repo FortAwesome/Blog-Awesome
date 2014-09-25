@@ -16,7 +16,7 @@
   <link href='http://blog.fontawesome.io/feed.xml' rel='alternate' type='application/atom+xml'>
 
   <link rel="stylesheet" href="/assets/css/pygments.css">
-  <script src="//use.fonticons.com/b0e6721e.js"></script>
+  <script src="//use.fonticons.com/63bf70e9.js"></script>
   <link rel="stylesheet" href="/assets/css/site.css" media="screen">
 
   <link rel="shortcut icon" href="/assets/ico/favicon.ico">
@@ -61,7 +61,7 @@
     <div class="blog-awesome-nav navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/articles">All Articles</a></li>
-        <li><a href="https://github.com/FortAwesome/Font-Awesome">GitHub<span class="hidden-sm"> Project</span></a></li>
+        <li><a href="http://fontawesome.io">Font Awesome</a></li>
       </ul>
     </div>
   </div>
@@ -90,7 +90,7 @@
   <div class="container">
     <section class="row">
   <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-    <div class="post">
+    <div class="post link-dotted">
       <h1><a href="">Stacking Text and Icons</a></h1>
       <p class="date">
         <a href="http://twitter.com/davegandy">@davegandy</a> wrote this on 19 May 2014
@@ -109,7 +109,7 @@
     </nav>
   </div>
   <div class="col-md-8 col-sm-10">
-    <div id="post" class="post post-body">
+    <div id="post" class="post post-body link-dotted">
       <p>Want to stack regular text on top of Font Awesome icons? It turns out that Font Awesome
 <a href="http://fontawesome.io/examples/#stacked">stacked icons</a> are already pretty much what we need.</p>
 
@@ -120,7 +120,7 @@ of using a star selector. This saves us the trouble of needing to add any <code>
 not have been so trivial in 3.2. Here&#39;s the HTML:</p>
 
 <h4>HTML</h4>
-<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa-stack fa-3x&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa-stack fa-3x&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-calendar-o fa-stack-2x&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
   <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">&quot;fa-stack-1x calendar-text&quot;</span><span class="nt">&gt;</span>27<span class="nt">&lt;/strong&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
@@ -129,7 +129,7 @@ not have been so trivial in 3.2. Here&#39;s the HTML:</p>
 
 <p>The only CSS we really need to add is to vertically align the text, since the empty spot in the calendar isn&#39;t
 centered. So we&#39;ll push it down a tad:</p>
-<div class="highlight"><pre><code class="scss language-scss" data-lang="scss"><span class="nc">.calendar-text</span> <span class="p">{</span> <span class="na">margin-top</span><span class="o">:</span> <span class="mf">.3</span><span class="kt">em</span><span class="p">;</span> <span class="p">}</span>
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.calendar-text</span> <span class="p">{</span> <span class="na">margin-top</span><span class="o">:</span> <span class="mf">.3</span><span class="kt">em</span><span class="p">;</span> <span class="p">}</span>
 </code></pre></div>
 <h4>RESULT</h4>
 
@@ -160,7 +160,7 @@ works great with text after we give it a <code>.2em</code> top margin.</p>
 
 <section class="row">
   <div class="col-sm-8 col-sm-offset-2 text-center">
-    <h2><a href="/articles">See All Articles &thinsp;&raquo;</a></h2>
+    <h2 class="post"><a href="/articles">See All Articles &thinsp;&raquo;</a></h2>
   </div>
 </section>
 
@@ -182,8 +182,8 @@ works great with text after we give it a <code>.2em</code> top margin.</p>
 
 
 <script src="http://platform.twitter.com/widgets.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>

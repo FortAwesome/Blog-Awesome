@@ -16,7 +16,7 @@
   <link href='http://blog.fontawesome.io/feed.xml' rel='alternate' type='application/atom+xml'>
 
   <link rel="stylesheet" href="/assets/css/pygments.css">
-  <script src="//use.fonticons.com/b0e6721e.js"></script>
+  <script src="//use.fonticons.com/63bf70e9.js"></script>
   <link rel="stylesheet" href="/assets/css/site.css" media="screen">
 
   <link rel="shortcut icon" href="/assets/ico/favicon.ico">
@@ -61,7 +61,7 @@
     <div class="blog-awesome-nav navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/articles">All Articles</a></li>
-        <li><a href="https://github.com/FortAwesome/Font-Awesome">GitHub<span class="hidden-sm"> Project</span></a></li>
+        <li><a href="http://fontawesome.io">Font Awesome</a></li>
       </ul>
     </div>
   </div>
@@ -90,7 +90,7 @@
   <div class="container">
     <section class="row">
   <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-    <div class="post">
+    <div class="post link-dotted">
       <h1><a href="">Get the Most out of Font Awesome and BootstrapCDN</a></h1>
       <p class="date">
         <a href="http://twitter.com/davegandy">@davegandy</a> wrote this on 20 May 2013
@@ -107,16 +107,16 @@
     </nav>
   </div>
   <div class="col-md-8 col-sm-10">
-    <div id="post" class="post post-body">
+    <div id="post" class="post post-body link-dotted">
       <p>The <a href="http://fontawesome.io/get-started/#bootstrapcdn">easiest way to get started</a> with Font Awesome is to use <a href="http://www.bootstrapcdn.com/#tab_fontawesome">BootstrapCDN</a>. With a single line of code, you can get all associated Font Awesome CSS and font files served up. The content is even gzipped coming from Bootstrap CDN:</p>
-<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
 </code></pre></div>
 <p>This is a fantastic way to get up and running with Font Awesome for the first time, as BootstrapCDN also takes care of serving up font files with all the <a href="http://stackoverflow.com/questions/2871655/proper-mime-type-for-fonts#answer-10864297">proper MIME types</a>.</p>
 
 <h3>Customizing Font Awesome</h3>
 
 <p>This is all well and good, but what about folks who want to customize Font Awesome? Turns out you can serve just the fonts directly from BootstrapCDN from your own customized version of Font Awesome. After <a href="http://fontawesome.io/assets/font-awesome.zip">downloading</a> the latest version of Font Awesome, open up the <code>font-awesome/less</code> directory. Then, edit <code>variables.less</code> and change the <code>@FontAwesomePath</code> variable to:</p>
-<div class="highlight"><pre><code class="scss language-scss" data-lang="scss"><span class="k">@FontAwesomePath</span><span class="nd">:</span> <span class="s2">&quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/font&quot;</span><span class="o">;</span>
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@FontAwesomePath</span><span class="nd">:</span> <span class="s2">&quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/font&quot;</span><span class="o">;</span>
 </code></pre></div>
 <p>This gives you all the power to customize Font Awesome styles however you like and still get all the benefits and ease of using BootstrapCDN.</p>
 
@@ -134,7 +134,7 @@
 
 <section class="row">
   <div class="col-sm-8 col-sm-offset-2 text-center">
-    <h2><a href="/articles">See All Articles &thinsp;&raquo;</a></h2>
+    <h2 class="post"><a href="/articles">See All Articles &thinsp;&raquo;</a></h2>
   </div>
 </section>
 
@@ -156,8 +156,8 @@
 
 
 <script src="http://platform.twitter.com/widgets.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>
