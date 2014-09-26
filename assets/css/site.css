@@ -6263,6 +6263,14 @@ button.close {
 }
 .post a {
   text-decoration: underline;
+  -webkit-text-decoration-color: rgba(94, 94, 94, 0.25);
+  -moz-text-decoration-color: rgba(94, 94, 94, 0.25);
+  text-decoration-color: rgba(94, 94, 94, 0.25);
+}
+.post a:hover {
+  -webkit-text-decoration-color: rgba(33, 133, 99, 0.5);
+  -moz-text-decoration-color: rgba(33, 133, 99, 0.5);
+  text-decoration-color: rgba(33, 133, 99, 0.5);
 }
 .date .twitter-share-button {
   margin-left: 10px;

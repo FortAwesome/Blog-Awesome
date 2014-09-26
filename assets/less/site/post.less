@@ -16,7 +16,19 @@
     text-align: center;
   }
   p { margin-bottom: 1.25em; }
-  a { text-decoration: underline; }
+  a {
+    text-decoration: underline;
+
+    -webkit-text-decoration-color: fade(@link-color,25%);
+       -moz-text-decoration-color: fade(@link-color,25%);
+            text-decoration-color: fade(@link-color,25%);
+
+    &:hover {
+      -webkit-text-decoration-color: fade(@link-hover-color,50%);
+         -moz-text-decoration-color: fade(@link-hover-color,50%);
+              text-decoration-color: fade(@link-hover-color,50%);
+    }
+  }
 }
 
 .date .twitter-share-button {
