@@ -6261,16 +6261,22 @@ button.close {
 .post p {
   margin-bottom: 1.25em;
 }
-.post a {
-  text-decoration: underline;
+.post.post-header a,
+.post.post-footer a {
   -webkit-text-decoration-color: rgba(94, 94, 94, 0.25);
   -moz-text-decoration-color: rgba(94, 94, 94, 0.25);
   text-decoration-color: rgba(94, 94, 94, 0.25);
 }
+.post a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #279d75;
+  -moz-text-decoration-color: #279d75;
+  text-decoration-color: #279d75;
+}
 .post a:hover {
-  -webkit-text-decoration-color: rgba(33, 133, 99, 0.5);
-  -moz-text-decoration-color: rgba(33, 133, 99, 0.5);
-  text-decoration-color: rgba(33, 133, 99, 0.5);
+  -webkit-text-decoration-color: rgba(33, 133, 99, 0.75);
+  -moz-text-decoration-color: rgba(33, 133, 99, 0.75);
+  text-decoration-color: rgba(33, 133, 99, 0.75);
 }
 .date .twitter-share-button {
   margin-left: 10px;
