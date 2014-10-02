@@ -16,20 +16,28 @@
     text-align: center;
   }
   p { margin-bottom: 1.25em; }
+  &.post-header, &.post-footer {
+    a {
+      -webkit-text-decoration-color: fade(@link-color,25%);
+         -moz-text-decoration-color: fade(@link-color,25%);
+              text-decoration-color: fade(@link-color,25%);
+    }
+  }
   a {
     text-decoration: underline;
 
-    -webkit-text-decoration-color: fade(@link-color,25%);
-       -moz-text-decoration-color: fade(@link-color,25%);
-            text-decoration-color: fade(@link-color,25%);
+    -webkit-text-decoration-color: @brand-main;
+       -moz-text-decoration-color: @brand-main;
+            text-decoration-color: @brand-main;
 
     &:hover {
-      -webkit-text-decoration-color: fade(@link-hover-color,50%);
-         -moz-text-decoration-color: fade(@link-hover-color,50%);
-              text-decoration-color: fade(@link-hover-color,50%);
+      -webkit-text-decoration-color: fade(@link-hover-color,75%);
+         -moz-text-decoration-color: fade(@link-hover-color,75%);
+              text-decoration-color: fade(@link-hover-color,75%);
     }
   }
 }
+
 
 .date .twitter-share-button {
   margin-left: 10px;

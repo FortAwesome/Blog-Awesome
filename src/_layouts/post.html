@@ -4,7 +4,7 @@ layout: base
 
 <section class="row">
   <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-    <div class="post link-dotted">
+    <div class="post post-header">
       <h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
       <p class="date">
         <a href="http://twitter.com/{{ page.author }}">@{{ page.author }}</a> wrote this on {{ page.date | date_to_string }}
@@ -23,7 +23,7 @@ layout: base
     </nav>
   </div>
   <div class="col-md-8 col-sm-10">
-    <div id="post" class="post post-body link-dotted">
+    <div id="post" class="post post-body">
       {{ content }}
     </div>
   </div>
