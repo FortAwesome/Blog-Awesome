@@ -7,7 +7,7 @@ description: News, Tips, & Tricks from the Official Font Awesome Blog
 {% for post in paginator.posts %}
 <section class="row">
   <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-    <div class="post">
+    <div class="post post-header">
       <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
       <p class="date">
         <a href="http://twitter.com/{{ post.author }}">@{{ post.author }}</a> wrote this on {{ post.date | date_to_string }}

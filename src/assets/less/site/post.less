@@ -77,6 +77,15 @@ ul.posts {
       font-family: @headings-font-family;
       font-size: 28px;
       text-decoration: underline;
+      -webkit-text-decoration-color: fade(@link-color,25%);
+      -moz-text-decoration-color: fade(@link-color,25%);
+      text-decoration-color: fade(@link-color,25%);
+
+      &:hover {
+        -webkit-text-decoration-color: fade(@link-hover-color,75%);
+        -moz-text-decoration-color: fade(@link-hover-color,75%);
+        text-decoration-color: fade(@link-hover-color,75%);
+      }
     }
     a.date {
       position: absolute;
