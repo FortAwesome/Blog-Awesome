@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Awesome &mdash; Stacking Text and Icons</title>
+  <title>Blog Awesome &mdash; Home</title>
 
   <meta name="description" content="Blog Awesome &mdash; The Official Font Awesome Blog ">
   <meta name="author" content="Dave Gandy">
-  <meta property="og:title" content="Blog Awesome: Stacking Text and Icons" />
+  <meta property="og:title" content="Blog Awesome: Home" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://blog.fontawesome.io/2014/05/19/stacking-text-and-icons/" />
-  <meta property="og:description" content="It turns out stacking text and icons isn't so hard." />
+  <meta property="og:url" content="http://blog.fontawesome.io/page2/" />
+  <meta property="og:description" content="News, Tips, & Tricks from the Official Font Awesome Blog" />
 
   <link href='http://blog.fontawesome.io/feed.xml' rel='alternate' type='application/atom+xml'>
 
@@ -88,74 +88,33 @@
 
 
   <div class="container">
-    <section class="row">
+    
+<section class="row">
   <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
     <div class="post post-header">
-      <h1><a href="">Stacking Text and Icons</a></h1>
+      <h1><a href="/2013/05/20/get-the-most-out-font-awesome-and-bootstrapcdn/">Get the Most out of Font Awesome and BootstrapCDN</a></h1>
       <p class="date">
-        <a href="http://twitter.com/davegandy">@davegandy</a> wrote this on 19 May 2014
-        <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fontawesome" data-url="http://blog.fontawesome.io/2014/05/19/stacking-text-and-icons/" data-text="Stacking Text and Icons:" data-related="davegandy">Tweet</a>
+        <a href="http://twitter.com/davegandy">@davegandy</a> wrote this on 20 May 2013
+        <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="fontawesome" data-url="http://blog.fontawesome.io/2013/05/20/get-the-most-out-font-awesome-and-bootstrapcdn/" data-text="Get the Most out of Font Awesome and BootstrapCDN:" data-related="davegandy">Tweet</a>
       </p>
+      <div class="post-body">
+        <p>The <a href="http://fontawesome.io/get-started/#bootstrapcdn">easiest way to get started</a> with Font Awesome is to use <a href="http://www.bootstrapcdn.com/#tab_fontawesome">BootstrapCDN</a>. With a single line of code, you can get all associated Font Awesome CSS and font files served up. The content is even gzipped coming from Bootstrap CDN:</p>
+<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<p>This is a fantastic way to get up and running with Font Awesome for the first time, as BootstrapCDN also takes care of serving up font files with all the <a href="http://stackoverflow.com/questions/2871655/proper-mime-type-for-fonts#answer-10864297">proper MIME types</a>.</p>
+
+<h3>Customizing Font Awesome</h3>
+
+<p>This is all well and good, but what about folks who want to customize Font Awesome? Turns out you can serve just the fonts directly from BootstrapCDN from your own customized version of Font Awesome. After <a href="http://fontawesome.io/assets/font-awesome.zip">downloading</a> the latest version of Font Awesome, open up the <code>font-awesome/less</code> directory. Then, edit <code>variables.less</code> and change the <code>@FontAwesomePath</code> variable to:</p>
+<div class="highlight"><pre><code class="scss language-scss" data-lang="scss"><span class="k">@FontAwesomePath</span><span class="nd">:</span> <span class="s2">&quot;//netdna.bootstrapcdn.com/font-awesome/3.1.1/font&quot;</span><span class="o">;</span>
+</code></pre></div>
+<p>This gives you all the power to customize Font Awesome styles however you like and still get all the benefits and ease of using BootstrapCDN.</p>
+
+      </div>
     </div>
   </div>
 </section>
 
-<div class="row">
-  <div class="col-md-2 col-sm-1">
-    <nav class="hidden-xs">
-      
-      <a href="/2013/06/04/upcoming-changes-in-font-awesome-3.2-and-4.0/" class="nav-article-left"><i class="fa fa-chevron-left"></i></a>
-      
-    </nav>
-  </div>
-  <div class="col-md-8 col-sm-10">
-    <div id="post" class="post post-body">
-      <p>Want to stack regular text on top of Font Awesome icons? It turns out that Font Awesome
-<a href="http://fontawesome.io/examples/#stacked">stacked icons</a> are already pretty much what we need.</p>
-
-<h3>FA-CALENDAR-O WITH DATE</h3>
-
-<p>When we re-wrote the CSS in FA version 4, we separated out the icon font declaration into the <code>fa</code> class instead
-of using a star selector. This saves us the trouble of needing to add any <code>font-family</code> overrides in the CSS. This would
-not have been so trivial in 3.2. Here&#39;s the HTML:</p>
-
-<h4>HTML</h4>
-<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fa-stack fa-3x&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-calendar-o fa-stack-2x&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
-  <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">&quot;fa-stack-1x calendar-text&quot;</span><span class="nt">&gt;</span>27<span class="nt">&lt;/strong&gt;</span>
-<span class="nt">&lt;/span&gt;</span>
-</code></pre></div>
-<h4>CSS</h4>
-
-<p>The only CSS we really need to add is to vertically align the text, since the empty spot in the calendar isn&#39;t
-centered. So we&#39;ll push it down a tad:</p>
-<div class="highlight"><pre><code class="scss language-scss" data-lang="scss"><span class="nc">.calendar-text</span> <span class="p">{</span> <span class="na">margin-top</span><span class="o">:</span> <span class="mf">.3</span><span class="kt">em</span><span class="p">;</span> <span class="p">}</span>
-</code></pre></div>
-<h4>RESULT</h4>
-
-<p data-height="170" data-theme-id="6187" data-slug-hash="dlCuq" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/davegandy/pen/dlCuq/'>dlCuq</a> by Dave Gandy (<a href='http://codepen.io/davegandy'>@davegandy</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-
-<script async src="//codepen.io/assets/embed/ei.js"></script>
-
-<h3>FA-COMMENT &amp; FA-FILE-O</h3>
-
-<p>We threw in a couple of other examples in there too. The <a href="http://fontawesome.io/icon/comment/">comment icon</a> already
-happens to align vertically, so there&#39;s no extra CSS to add. The <a href="http://fontawesome.io/icon/file-o/">file-o icon</a> also
-works great with text after we give it a <code>.2em</code> top margin.</p>
-
-<p>Have any great use cases for stacking text on top of icons? Drop us a note on Twitter at
-<a href="https://twitter.com/fontawesome">@fontawesome</a>.</p>
-
-    </div>
-  </div>
-  <div class="col-md-2 col-sm-1">
-    <nav class="hidden-xs">
-      
-      <a href="/2014/07/09/help-give-font-awesome-major-upgrades/" class="nav-article-right"><i class="fa fa-chevron-right"></i></a>
-      
-    </nav>
-  </div>
-</div>
 
 
 <section class="row">
